@@ -1,0 +1,35 @@
+# Ignore OS, system, and IDE files - KemingHe/common-devx
+# macOS - System files that store metadata, icons, and settings
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+
+# Windows - System-generated files and folders
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux - System and folder-specific files
+.directory
+.Trash-*
+
+# Editor directories/files - IDE settings and cache files
+.cursor/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
