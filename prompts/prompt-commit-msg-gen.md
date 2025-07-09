@@ -44,9 +44,11 @@ CHANGES
 IMPACT
 - How this affects users/system
 
+BREAKING CHANGES
+- UserService.getData() now returns Promise<UserData>
+
 TECHNICAL NOTES
 - Implementation details
-- Breaking changes (if any)
 ```
 
 ## CONSTRAINTS
@@ -77,6 +79,6 @@ CHANGES
 - Add mutex lock to prevent concurrent requests
 - Implement request deduplication
 
-TECHNICAL NOTES
-- Breaking change: UserService.getData() now returns Promise<UserData>
+BREAKING CHANGES
+- UserService.getData() now returns Promise<UserData>
 ```

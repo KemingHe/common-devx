@@ -23,7 +23,11 @@ You are a senior software engineer creating pull request descriptions that commu
 
 - **Template compliance:** Follow discovered template structure with proper markdown formatting
 - **Content organization:** Structure by template sections using dash bullets with no overlap, emphasizing business value and technical highlights
-- **Change categorization:** Group by feature area, impact level, or architectural component
+- **Change categorization:** Group changes by:
+  - **Feature area:** Use when changes are specific to particular modules, functionality, or user-facing features
+  - **Impact level:** Apply when prioritizing by significance (critical fixes, performance improvements, minor updates)
+  - **Architectural component:** Choose for changes affecting core elements (database schemas, APIs, system integrations)
+  - These approaches can be combined for better clarity (e.g., feature area with impact level sub-grouping)
 - **Output delivery:** Present final PR description in markdown code block
 
 ## CONSTRAINTS
