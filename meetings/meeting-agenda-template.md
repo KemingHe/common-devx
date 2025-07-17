@@ -2,10 +2,10 @@
 
 > Updated on [YYYY-MM-DD] by @[GitHubUsername]
 
-- **Date:** [YYYY-MM-DD]
-- **Time:** [HH:MM-HH:MMam/pm] [Timezone]
-- **Location:** [Virtual/Physical Location]
-- **Attendees:**
+- **Date**: [YYYY-MM-DD]
+- **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
+- **Location**: [Virtual/Physical Location]
+- **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
 
@@ -17,11 +17,11 @@
 
 ## AGENDA ITEMS ([Total Duration])
 
-1. **[Topic 1]** ([Duration]) - [Lead]
+1. **[Topic 1]** ([X] minutes) - [Lead First Name]
    - [Brief description]
    - [Key points or questions]
 
-2. **Next Steps & Action Items** ([Duration]) - [Lead]
+2. **Next Steps & Action Items** ([X] minutes) - [Lead First Name]
    - [Brief description]
    - [Expected action items]
 
@@ -33,4 +33,4 @@
 
 ---
 
-> Meeting Agenda Template v1.0.3 - KemingHe/common-devx
+> Meeting Agenda Template v1.0.5 - KemingHe/common-devx

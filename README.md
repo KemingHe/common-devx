@@ -6,10 +6,10 @@ Open templates and AI prompts to accelerate project setup, improve documentation
 
 ## 📋 Overview
 
-- **Accelerate project setup:** Ready-to-use templates eliminate documentation setup time
-- **Improve documentation quality:** Structured templates ensure consistency across projects
-- **Standardize team workflows:** GitHub and meeting templates reduce onboarding costs
-- **Zero dependencies:** Pure markdown templates with no installation requirements
+- **Accelerate project setup**: Ready-to-use templates eliminate documentation setup time
+- **Improve documentation quality**: Structured templates ensure consistency across projects
+- **Standardize team workflows**: GitHub and meeting templates reduce onboarding costs
+- **Zero dependencies**: Pure markdown templates with no installation requirements
 
 ## 🚀 Getting Started
 
@@ -44,12 +44,12 @@ common-devx/
 
 ## 🛠️ Development
 
-- **Maintainer:** @KemingHe continues adding templates from ongoing work
-- **Template source:** Generic versions of best practices with PII removed
-- **Resource approach:** Designed as reference dump rather than active development framework
+- **Maintainer**: @KemingHe continues adding templates from ongoing work
+- **Template source**: Generic versions of best practices with PII removed
+- **Resource approach**: Designed as reference dump rather than active development framework
 
 ## 📞 Support
 
-- **Questions:** Reference existing templates and prompts for implementation guidance
-- **Enhancement requests:** Submit suggestions through GitHub issue templates
-- **Target users:** Developers, teams, and organizations using AI-assisted workflows
+- **Questions**: Reference existing templates and prompts for implementation guidance
+- **Enhancement requests**: Submit suggestions through GitHub issue templates
+- **Target users**: Developers, teams, and organizations using AI-assisted workflows

@@ -2,13 +2,13 @@
 
 > Updated on [YYYY-MM-DD] by @[GitHubUsername]
 
-- **Date:** [YYYY-MM-DD]
-- **Time:** [HH:MM-HH:MMam/pm] [Timezone]
-- **Location:** [Virtual/Physical Location]
-- **Attendees:**
+- **Date**: [YYYY-MM-DD]
+- **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
+- **Location**: [Virtual/Physical Location]
+- **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
-- **Subject:** [MEETING TITLE]
+- **Subject**: [MEETING TITLE]
 
 ## EXECUTIVE SUMMARY
 
@@ -23,21 +23,21 @@
 
 | Priority | Task | Owner | Deadline |
 | :--- | :--- | :--- | :--- |
-| 0 | [Immediate action] | [Name] | [Date] |
-| 1 | [High priority] | [Name] | [Date] |
-| 2 | [Medium priority] | [Name/Group] | [Timeframe] |
-| 3 | [Low priority] | [Name/Group] | [Timeframe/TBD] |
+| 0 | [Immediate action] | [First Name/Group] | [MM-DD] |
+| 1 | [High priority] | [First Name/Group] | [MM-DD] at [HH:MMam/pm] [Timezone] |
+| 2 | [Medium priority] | [First Name/Group] | [Timeframe] |
+| 3 | [Low priority] | [First Name/Group] | [Timeframe/TBD] |
 
 ## NEXT MEETING
 
-- **Topics:** [List of topics for next meeting]
-- **Date:** [YYYY-MM-DD]
-- **Time:** [HH:MM-HH:MMam/pm] [Timezone]
-- **Location:** [Virtual/Physical Location]
-- **Attendees:**
+- **Topics**: [List of topics for next meeting]
+- **Date**: [YYYY-MM-DD]
+- **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
+- **Location**: [Virtual/Physical Location]
+- **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
 
 ---
 
-> Meeting Memo Template v1.0.3 - KemingHe/common-devx
+> Meeting Memo Template v1.0.5 - KemingHe/common-devx
