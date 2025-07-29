@@ -1,6 +1,6 @@
 # Common DevX
 
-> Updated on 2025-07-09 by @KemingHe
+> Updated on 2025-07-29 by @KemingHe
 
 Open templates and AI prompts to accelerate project setup, improve documentation quality, and standardize team workflows for AI-assisted development.
 
@@ -44,12 +44,16 @@ common-devx/
 
 ## 🛠️ Development
 
-- **Maintainer**: @KemingHe continues adding templates from ongoing work
+- **Maintainer**: [@KemingHe](https://github.com/KemingHe) continues adding templates from ongoing work
 - **Template source**: Generic versions of best practices with PII removed
 - **Resource approach**: Designed as reference dump rather than active development framework
 
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE) - a permissive license that allows free use, modification, and distribution with attribution.
+
 ## 📞 Support
 
-- **Questions**: Reference existing templates and prompts for implementation guidance
-- **Enhancement requests**: Submit suggestions through GitHub issue templates
+- **Questions**: Reference existing [GitHub](./.github/), [contacts](./contacts.md), and [meeting](./meetings/) templates and [prompts](./prompts/) for implementation guidance
+- **Enhancement requests**: [Submit suggestions](https://github.com/KemingHe/common-devx/issues) through GitHub issue templates
 - **Target users**: Developers, teams, and organizations using AI-assisted workflows
