@@ -23,10 +23,10 @@
 
 | Priority | Task | Owner | Deadline |
 | :--- | :--- | :--- | :--- |
-| 0 | [Immediate action] | [First Name/Group] | [MM-DD] |
-| 1 | [High priority] | [First Name/Group] | [MM-DD] at [HH:MMam/pm] [Timezone] |
-| 2 | [Medium priority] | [First Name/Group] | [Timeframe] |
-| 3 | [Low priority] | [First Name/Group] | [Timeframe/TBD] |
+| 🔴 Critical | [Immediate action] | [First Name/Group] | [MM-DD] |
+| 🟠 High | [High priority] | [First Name/Group] | [MM-DD] at [HH:MMam/pm] [Timezone] |
+| 🟡 Medium | [Medium priority] | [First Name/Group] | [Timeframe] |
+| 🟢 Low | [Low priority] | [First Name/Group] | [Timeframe/TBD] |
 
 ## NEXT MEETING
 
@@ -40,4 +40,4 @@
 
 ---
 
-> Meeting Memo Template v1.0.5 - KemingHe/common-devx
+> Meeting Memo Template v1.0.6 - KemingHe/common-devx
