@@ -2,7 +2,7 @@
 
 > Updated on 2025-07-29 by @KemingHe
 
-Open templates and AI prompts to accelerate project setup, improve documentation quality, and standardize team workflows for AI-assisted development.
+Open templates and AI prompts to accelerate project setup, improve documentation quality, and standardize team workflows for AI-assisted development. [[Watch demo on YouTube]](https://youtu.be/Mfx0DFsCcTw)
 
 ## 📋 Overview
 

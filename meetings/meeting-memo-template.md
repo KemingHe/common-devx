@@ -4,7 +4,7 @@
 
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
-- **Location**: [Virtual/Physical Location]
+- **Location**: [Virtual/Physical Location] (transcribed/not)
 - **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
@@ -33,11 +33,11 @@
 - **Topics**: [List of topics for next meeting]
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
-- **Location**: [Virtual/Physical Location]
+- **Location**: [Virtual/Physical Location] (to be transcribed/not)
 - **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
 
 ---
 
-> Meeting Memo Template v1.0.6 - KemingHe/common-devx
+> Meeting Memo Template v1.0.7 - KemingHe/common-devx

@@ -4,18 +4,18 @@
 
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
-- **Location**: [Virtual/Physical Location]
+- **Location**: [Virtual/Physical Location] (to be transcribed/not)
 - **Attendees**:
   - [First Name Last Name 1] (Title, Company)
   - [First Name Last Name 2] (Title, Company)
 
 ## PREPARATION
 
-- [Materials to review before meeting]
-- [Links to relevant documents]
-- [Required preparation tasks]
+- [ ] [Materials to review before meeting]
+- [ ] [Links to relevant documents]
+- [ ] [Required preparation tasks]
 
-## AGENDA ITEMS ([Total Duration])
+## AGENDA ITEMS ([X] minutes in total)
 
 1. **[Topic 1]** ([X] minutes) - [Lead First Name]
    - [Brief description]
@@ -33,4 +33,4 @@
 
 ---
 
-> Meeting Agenda Template v1.0.5 - KemingHe/common-devx
+> Meeting Agenda Template v1.0.6 - KemingHe/common-devx
