@@ -15,7 +15,7 @@
 - [ ] [Links to relevant documents]
 - [ ] [Required preparation tasks]
 
-## AGENDA ITEMS ([X] minutes in total)
+## AGENDA ITEMS ([Total Duration in minutes])
 
 1. **[Topic 1]** ([X] minutes) - [Lead First Name]
    - [Brief description]
