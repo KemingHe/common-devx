@@ -1,6 +1,6 @@
 # Common DevX
 
-> Updated on 2025-07-29 by @KemingHe
+> Updated on 2025-08-08 by @KemingHe
 
 Open templates and AI prompts to accelerate project setup, improve documentation quality, and standardize team workflows for AI-assisted development. [[Watch demo on YouTube]](https://youtu.be/Mfx0DFsCcTw)
 
@@ -27,24 +27,30 @@ Replace placeholder content with your project-specific information.
 
 ### Step 4: Automate with AI
 
-Feed prompts to AI assistants along with templates for automated generation.
+Feed [prompts](./prompts/) to AI assistants along with templates for automated documentation generation.
+
+> [!IMPORTANT]
+>
+> AI can make mistakes, always review generated output for correctness.
 
 ## 📁 Project Structure
 
 ```plaintext
 common-devx/
-├── .github/                    # GitHub workflow templates
-│   ├── ISSUE_TEMPLATE/         # Bug reports and feature requests
-│   └── PULL_REQUEST_TEMPLATE/  # PR description templates
-├── meetings/                   # Team communication templates
-├── prompts/                    # AI assistant prompts for automation
-├── contacts.md                 # Team contact information template
-└── README.md                   # Project documentation
+├── .github/                      # GitHub workflow templates
+│   ├── ISSUE_TEMPLATE/           # Bug report and feature request templates
+│   └── pull_request_template.md  # Pull request template
+├── meetings/                     # Team communication templates
+├── prompts/                      # Prompts for AI-assistned developer workflows
+├── CONTRIBUTING-rebase.md        # Git rebase guide for squash-and-merge workflows
+├── CONTRIBUTING.md               # Conributing template
+├── LICENSE                       # MIT license
+└── README.md                     # This file
 ```
 
 ## 🛠️ Development
 
-- **Maintainer**: [@KemingHe](https://github.com/KemingHe) continues adding templates from ongoing work
+- **Maintainer**: [@KemingHe](https://github.com/KemingHe)
 - **Template source**: Generic versions of best practices with PII removed
 - **Resource approach**: Designed as reference dump rather than active development framework
 
