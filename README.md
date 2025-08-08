@@ -41,9 +41,9 @@ common-devx/
 │   ├── ISSUE_TEMPLATE/           # Bug report and feature request templates
 │   └── pull_request_template.md  # Pull request template
 ├── meetings/                     # Team communication templates
-├── prompts/                      # Prompts for AI-assistned developer workflows
+├── prompts/                      # Prompts for AI-assisted developer workflows
 ├── CONTRIBUTING-rebase.md        # Git rebase guide for squash-and-merge workflows
-├── CONTRIBUTING.md               # Conributing template
+├── CONTRIBUTING.md               # Contributing guide template
 ├── LICENSE                       # MIT license
 └── README.md                     # This file
 ```
