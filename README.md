@@ -21,7 +21,7 @@ common-devx/
 ├── meetings/         # Meeting templates
 ├── prompts/          # AI workflow prompts  
 ├── troubleshooting/  # Developer issue guides
-├── .gitignore/       # Ignore OS, system, and IDE files
+├── .gitignore        # Ignore OS, system, and IDE files
 ├── CONTRIBUTING.md   # Contributing guide template
 ├── contacts.md       # Team contact template
 └── LICENSE           # MIT license
