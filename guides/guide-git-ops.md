@@ -9,7 +9,7 @@ Essential git workflows organized by common developer scenarios for efficient re
 > - **Troubleshooting**:
 >   - [GPG signing issue resolution](../troubleshooting/troubleshooting-gpg-signing-lock-issue.md)
 > - **Advanced rebasing**: Reference [CONTRIBUTING-rebase.md](../CONTRIBUTING-rebase.md) if you use `squash-and-merge`
-> - **Commit messages**: Use [prompt-commig-msg-gen.md](../prompts/prompt-commit-msg-gen.md) for AI-assisted conventional commits
+> - **Commit messages**: Use [prompt-commit-msg-gen.md](../prompts/prompt-commit-msg-gen.md) for AI-assisted conventional commits
 
 ## Table of Contents
 
