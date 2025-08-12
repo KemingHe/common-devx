@@ -18,6 +18,7 @@ Ready-to-use templates and AI prompts for consistent documentation, standardized
 ```plaintext
 common-devx/
 ├── .github/          # GitHub issue/PR templates
+├── guides/           # Reference guides and tutorials
 ├── meetings/         # Meeting templates
 ├── prompts/          # AI workflow prompts  
 ├── troubleshooting/  # Developer issue guides

@@ -1,4 +1,4 @@
-# Troubleshooting - GPG Signing Lock Issue
+# Troubleshooting - GPG Signing Issue
 
 > Update on 2025-08-11 by @KemingHe
 
@@ -77,4 +77,4 @@ Regular `gpgconf --kill gpg-agent` can prevent buildup of stale processes.
 
 ---
 
-> GPG Signing Lock Issue Resolution - KemingHe/common-devx
+> GPG Signing Issue Resolution - KemingHe/common-devx
