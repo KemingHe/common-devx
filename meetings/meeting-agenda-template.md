@@ -6,8 +6,8 @@
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
 - **Location**: [Virtual/Physical Location] (to be transcribed/not)
 - **Attendees**:
-  - [First Name Last Name 1] (Title, Company)
-  - [First Name Last Name 2] (Title, Company)
+  - [Full Name 1], [Full Name 2] (Same Title, Same Company)
+  - [Full Name 3] (Title, Company)
 
 ## PREPARATION
 
@@ -33,4 +33,4 @@
 
 ---
 
-> Meeting Agenda Template v1.0.6 - KemingHe/common-devx
+> Meeting Agenda Template v1.0.7 - KemingHe/common-devx
