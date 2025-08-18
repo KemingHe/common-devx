@@ -6,8 +6,8 @@
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
 - **Location**: [Virtual/Physical Location] (transcribed/not)
 - **Attendees**:
-  - [First Name Last Name 1] (Title, Company)
-  - [First Name Last Name 2] (Title, Company)
+  - [Full Name 1], [Full Name 2] (Title, Company)
+  - [Full Name 3] (Title, Company)
 - **Subject**: [MEETING TITLE]
 
 ## EXECUTIVE SUMMARY
@@ -17,7 +17,8 @@
 ## KEY DECISIONS
 
 1. **[Decision Category 1]**
-   - [Key point, [external link](link)]
+   - [Established fact or group consensus point] [external link](link)
+   - [Credibility-based information (per [First Name/Organization])]
 
 ## ACTION ITEMS
 
@@ -35,9 +36,9 @@
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
 - **Location**: [Virtual/Physical Location] (to be transcribed/not)
 - **Attendees**:
-  - [First Name Last Name 1] (Title, Company)
-  - [First Name Last Name 2] (Title, Company)
+  - [Full Name 1], [Full Name 2] (Title, Company)
+  - [Full Name 3] (Title, Company)
 
 ---
 
-> Meeting Memo Template v1.0.7 - KemingHe/common-devx
+> Meeting Memo Template v1.0.8 - KemingHe/common-devx
