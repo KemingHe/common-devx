@@ -6,7 +6,7 @@
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
 - **Location**: [Virtual/Physical Location] (transcribed/not)
 - **Attendees**:
-  - [Full Name 1], [Full Name 2] (Title, Company)
+  - [Full Name 1], [Full Name 2] (Same Title, Same Company)
   - [Full Name 3] (Title, Company)
 - **Subject**: [MEETING TITLE]
 
@@ -36,7 +36,7 @@
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
 - **Location**: [Virtual/Physical Location] (to be transcribed/not)
 - **Attendees**:
-  - [Full Name 1], [Full Name 2] (Title, Company)
+  - [Full Name 1], [Full Name 2] (Same Title, Same Company)
   - [Full Name 3] (Title, Company)
 
 ---
