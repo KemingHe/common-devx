@@ -1,6 +1,6 @@
-# Troubleshooting - File Case Rename Detection
+# Troubleshooting - File Case Detection Issue at Renaming
 
-> Update on 2025-08-18 by @KemingHe
+> Update on 2025-09-13 by @KemingHe
 
 ## Problem
 
@@ -20,10 +20,11 @@ git commit -m "refactor(README.md): correct casing"
 ```
 
 > [!CAUTION]
+>
 > **Why not `git config core.ignorecase false`?**
 >
 > Breaks compatibility with case-insensitive filesystems and causes merge conflicts.
 
 ---
 
-> File Case Rename Detection - KemingHe/common-devx
+> File Case Detection Issue at Renaming Resolution v1.0.1 - KemingHe/common-devx
