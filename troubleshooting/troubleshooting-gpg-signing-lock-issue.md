@@ -1,6 +1,6 @@
 # Troubleshooting - GPG Signing Issue
 
-> Update on 2025-08-11 by @KemingHe
+> Update on 2025-09-13 by @KemingHe
 
 ## Problem
 
@@ -77,4 +77,4 @@ Regular `gpgconf --kill gpg-agent` can prevent buildup of stale processes.
 
 ---
 
-> GPG Signing Issue Resolution - KemingHe/common-devx
+> GPG Signing Issue Resolution v1.0.0 - KemingHe/common-devx

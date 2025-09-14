@@ -1,6 +1,6 @@
 # Contributing - Git Rebase
 
-> Updated on 2025-08-08 by @KemingHe
+> Updated on 2025-09-13 by @KemingHe
 
 Step-by-step process for safely rebasing feature branches when working with squash-and-merge PRs.
 
@@ -8,7 +8,9 @@ Step-by-step process for safely rebasing feature branches when working with squa
 
 Squash-and-merge creates commits already merged to `main` in branch history, making simple rebasing fail or create duplicates.
 
-> [!IMPORTANT] Required when
+> [!IMPORTANT]
+>
+> Required when:
 >
 > - Branch shows 10+ commits but contains only few new changes
 > - Simple `git rebase main` creates conflicts or duplicate commits
@@ -18,9 +20,9 @@ Squash-and-merge creates commits already merged to `main` in branch history, mak
 
 ### Strategy 1: Simple Rebase (Standard Case)
 
-> [!TIP] Use when
+> [!TIP]
 >
-> Branch diverged cleanly from current `main` with no merged commits in history.
+> Use when branch diverged cleanly from current `main` with no merged commits in history.
 
 ```shell
 # Update main and rebase
@@ -35,9 +37,9 @@ git push --force-with-lease origin feature-branch
 
 ### Strategy 2: Selective Rebase (Complex Case)
 
-> [!TIP] Use when
+> [!TIP]
 >
-> Branch contains already-merged commits that need exclusion.
+> Use when branch contains already-merged commits that need exclusion.
 
 ```shell
 # Update main
@@ -104,4 +106,4 @@ git rebase --abort                                # cancel rebase
 
 ---
 
-> Git Rebase Guide v1.0.0 - KemingHe/common-devx
+> Git Rebase Guide v1.0.1 - KemingHe/common-devx

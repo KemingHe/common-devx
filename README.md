@@ -1,6 +1,6 @@
 # Common DevX
 
-> Updated on 2025-08-11 by @KemingHe
+> Updated on 2025-09-13 by @KemingHe
 
 Ready-to-use templates and AI prompts for consistent documentation, standardized workflows, and faster project setup with zero dependencies. [[Watch demo on YouTube]](https://youtu.be/Mfx0DFsCcTw)
 
@@ -11,6 +11,7 @@ Ready-to-use templates and AI prompts for consistent documentation, standardized
 3. **Use AI prompts** - Combine [prompts](./prompts/) with templates for automated generation
 
 > [!IMPORTANT]
+>
 > Always review AI-generated content for correctness.
 
 ## 📁 Project Structure
