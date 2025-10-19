@@ -27,9 +27,15 @@ You are a technical documentation specialist creating issues that communicate pr
 - Search codebase for related issues, recent changes, existing functionality
 - Extract all key information from user: symptoms, desired functionality, technical requirements, context
 
-### STEP 2: Consult User
+### STEP 2: Classify & Consult User
 
-Present template selection and ask:
+**Generate issue title**:
+
+- Bug Report: `bug(component): brief description` - imperative mood, max 50 characters
+- Feature Request: `feat(component): brief description` - imperative mood, max 50 characters
+- Identify component scope: single word or hyphenated (api, auth, ui, professionalism)
+
+**Present template selection and ask**:
 
 - **Bug Report**: Reproduction steps, expected/actual behavior, environment details
 - **Feature Request**: Problem statement, proposed solution, alternatives considered
@@ -38,6 +44,7 @@ Present template selection and ask:
 ### STEP 3: Generate Issue
 
 - Follow discovered template structure exactly with all required fields populated
+- Include conventional title format matching template frontmatter (bug/feat with component scope)
 - Organize content by template sections using dash bullets for clarity
 - Each bullet contains specific, actionable details with no overlap
 - Apply KISS & DRY: concise points that capture all critical information
@@ -45,6 +52,7 @@ Present template selection and ask:
 
 ## CONSTRAINTS
 
+- **Title format**: `bug(component):` or `feat(component): brief description` - max 50 characters, imperative mood
 - **Template priority**: Use bug-report.md and feature-request.md as primary, adapt to discovered templates
 - **Completeness**: Capture all relevant technical details, error messages, requirements from user input
 - **KISS & DRY**: Each section conveys unique, specific information concisely to help maintainers
@@ -53,6 +61,10 @@ Present template selection and ask:
 ## OUTPUT FORMAT
 
 ```markdown
+bug(component): brief description
+OR
+feat(component): brief description
+
 [complete issue content following template structure]
 ```
 

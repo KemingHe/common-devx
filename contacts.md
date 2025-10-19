@@ -8,7 +8,7 @@ This document provides essential contact information for the [project/team name]
   - **Title**: [Job Title], [Company/Organization]
   - **Phone**: [+0 000-000-0000]
   - **Email**: [email@domain.com](mailto:[email@domain.com])
-  - **GitHub**: [https://github.com/[github-username]](https://github.com/[github-username])
+  - **GitHub**: [github-username](https://github.com/[github-username])
   - **Timezone**: [Timezone Name (Abbreviation, UTC±X)]
   - **Specializations**:
     - [Specific areas of expertise beneficial to the team]

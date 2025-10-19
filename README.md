@@ -4,7 +4,7 @@
 
 ## Overview
 
-Ready-to-use templates and AI prompts for consistent documentation, standardized workflows, and faster project setup with zero dependencies. [[Watch demo on YouTube](https://youtu.be/Mfx0DFsCcTw)]
+Ready-to-use templates and AI prompts for consistent documentation, standardized workflows, and faster project setup with zero dependencies. [Watch demo on YouTube](https://youtu.be/Mfx0DFsCcTw)
 
 Template collection for professional developer experience across any project type.
 

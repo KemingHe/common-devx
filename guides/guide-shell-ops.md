@@ -65,7 +65,7 @@ grep -c "pattern" file.txt             # count matches
 
 # Combine find and grep
 find . -name "*.js" -exec grep -l "TODO" {} \;
-grep -r "pattern" --include="*.py"     # search only Python files
+find . -name "*.py" -exec grep -n "pattern" {} +    # search only Python files (portable)
 ```
 
 > [⬆ Back to Table of Contents](#table-of-contents)
@@ -92,7 +92,7 @@ git branch -a | cat                    # plain branch list
 
 # Other non-interactive patterns
 git status | cat                       # full status without interaction
-man command | cat                      # view entire manual at once
+man command | col -b                   # view entire manual at once (clean output)
 ```
 
 ### Redirecting Output
@@ -111,7 +111,6 @@ command 2>&1 | tee output.txt          # save and display output
 # Common use cases
 npm install > /dev/null 2>&1           # silent installation
 find . -name "*.tmp" 2> /dev/null      # ignore permission errors
-git status > /dev/null 2>&1 && echo "clean"  # check if command succeeds
 ```
 
 > [⬆ Back to Table of Contents](#table-of-contents)

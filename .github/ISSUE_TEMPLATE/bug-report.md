@@ -2,7 +2,7 @@
 name: Bug report
 about: Report a bug or unexpected behavior
 title: 'bug(component): brief description'
-labels: 'bug, help wanted'
+labels: 'bug'
 
 ---
 

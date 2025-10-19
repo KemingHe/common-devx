@@ -79,6 +79,8 @@ Choose the most appropriate grouping for changes:
 ## OUTPUT FORMAT
 
 ```markdown
+type(scope): brief description
+
 [complete PR description following template structure]
 ```
 

@@ -21,7 +21,7 @@ git branch -a | cat                      # All branches
 
 **Forbidden Operations**: Never use git commit, push, pull, merge, rebase, add, reset, clean, or stash.
 
-**Prefer Remote Tools**: Use remote repository MCP tools when available for issues, PRs, and branch analysis.
+**Prefer Remote Tools**: Use remote repository/MCP tools when available for issues, PRs, and branch analysis.
 
 ## PROCESS
 
