@@ -1,6 +1,6 @@
 # MEETING MEMO
 
-> Updated on [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
 
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)

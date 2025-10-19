@@ -1,6 +1,6 @@
 # Contributing - Git Rebase
 
-> Updated on 2025-09-13 by @KemingHe
+> **Last Updated**: 2025-09-13 by @KemingHe
 
 Step-by-step process for safely rebasing feature branches when working with squash-and-merge PRs.
 

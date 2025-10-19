@@ -1,19 +1,19 @@
 ---
 name: Feature request
-about: Suggest a new feature or enhancement
-title: '✨ feat(component): brief description'
+about: Propose a new feature or enhancement
+title: 'feat(component): brief description'
 labels: 'enhancement, help wanted'
 
 ---
 
-### 🎯 Problem
+### Problem
 
 [Description of the problem or limitation this addresses]
 
-### 💡 Proposed Solution
+### Proposed Solution
 
 [Description of the desired feature or enhancement]
 
-### 🤔 Alternatives Considered
+### Alternatives Considered
 
-[Other approaches considered, if any] (optional)
+[Other approaches considered, if any, and evaluation] (optional)

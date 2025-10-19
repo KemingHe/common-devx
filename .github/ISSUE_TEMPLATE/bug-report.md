@@ -1,25 +1,25 @@
 ---
 name: Bug report
-about: Submit a bug report to notify our team
-title: '🐛 bug(component): brief description'
+about: Report a bug or unexpected behavior
+title: 'bug(component): brief description'
 labels: 'bug, help wanted'
 
 ---
 
-### 🐛 What happened?
+### What Happened?
 
 **Expected**: [What should happen]
 **Actual**: [What actually happened]
 
-### 🔄 Steps to Reproduce
+### Steps to Reproduce
 
 1. [First step to reproduce]
 2. [Second step to reproduce]
 3. [Third step where error occurs]
 
-Walkthrough recording: [Loom link or video]
+Walkthrough recording: [Link to video or screen recording]
 
-### 🌍 Environment
+### Environment
 
 - OS: [e.g. macOS 14.0]
 - Browser: [e.g. Chrome 120] (if applicable)

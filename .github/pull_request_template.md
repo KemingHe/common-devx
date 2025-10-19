@@ -1,7 +1,7 @@
 ---
 name: Pull Request
-about: Submit a pull request for review
-title: '🔄 type(scope): brief description'
+about: Submit changes for review
+title: 'type(scope): brief description'
 
 ---
 
@@ -13,16 +13,14 @@ Closes #[issue-number]
 >
 > [Any merge requirements or dependencies]
 
-### 🎯 Key Features
+### Key Features
 
 - **[Feature name]**: [Description of functionality or change]
 
-### 💼 Business Impact
+### Business Impact
 
 - **[Impact area]**: [How this benefits users or business]
 
-### 🔧 Technical Highlights
+### Technical Highlights
 
 - **[Technical aspect]**: [Implementation details or improvements]
-
----

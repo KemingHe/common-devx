@@ -1,6 +1,6 @@
 # Guide - Common Git Operations
 
-> Updated on 2025-08-12 by @KemingHe
+> **Last Updated**: 2025-08-12 by @KemingHe
 
 Essential git workflows organized by common developer scenarios for efficient repository management and collaboration.
 
