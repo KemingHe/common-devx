@@ -32,9 +32,15 @@ git branch -a | cat                           # All branches
 - Use remote repository/MCP tools for related issues and PRs
 - Search codebase for affected functionality, dependencies, architectural patterns
 
-### STEP 2: Consult User
+### STEP 2: Classify & Consult User
 
-Present change summary and ask:
+**Generate PR title**:
+
+- Determine PR type: feat, fix, docs, style, refactor, test, chore, perf, ci, build
+- Identify scope: single word or hyphenated (api, auth, ui, professionalism)
+- Create title: `type(scope): brief description` in imperative mood, max 50 characters
+
+**Present change summary and ask**:
 
 - Confirm scope and key areas of change
 - Which issues does this resolve?
@@ -44,6 +50,7 @@ Present change summary and ask:
 ### STEP 3: Generate PR Description
 
 - Follow discovered template structure exactly with all template fields addressed
+- Include conventional commit-style title at top matching template frontmatter format
 - Organize content by template sections using dash bullets with no overlap
 - Each bullet conveys unique information: apply KISS & DRY while capturing all significant changes
 - Emphasize business value, technical highlights, and implementation decisions
@@ -61,6 +68,7 @@ Choose the most appropriate grouping for changes:
 
 ## CONSTRAINTS
 
+- **Title format**: `type(scope): brief description` - max 50 characters, imperative mood, follows conventional commit standards
 - **Template priority**: Use pull_request_template.md as primary, adapt to discovered templates
 - **Comprehensive analysis**: Capture all significant changes using git commands, remote repository/MCP tools, and codebase search
 - **KISS & DRY**: Each bullet provides unique, concise information with all critical details included
