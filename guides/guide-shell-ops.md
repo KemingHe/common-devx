@@ -68,7 +68,7 @@ find . -name "*.js" -exec grep -l "TODO" {} \;
 find . -name "*.py" -exec grep -n "pattern" {} +    # search only Python files (portable)
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Output Control
 
@@ -113,7 +113,7 @@ npm install > /dev/null 2>&1           # silent installation
 find . -name "*.tmp" 2> /dev/null      # ignore permission errors
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## File Operations
 
@@ -163,7 +163,7 @@ rmdir empty-directory                  # remove empty directory
 rm -r directory                        # remove directory and contents
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ---
 
