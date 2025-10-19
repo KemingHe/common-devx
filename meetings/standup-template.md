@@ -1,6 +1,6 @@
 # Daily Standup on [YYYY-MM-DD]
 
-> Updated on [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
 
 ## Completed
 
@@ -10,10 +10,10 @@
 
 - [ ] Task in progress (X hr to spend)
 
-## Blockers
+## Blockers (Optional)
 
 - Issue/blocker description
 
 ---
 
-> Standup Template v1.0.12 - KemingHe/common-devx
+> Standup Template v1.0.13 - KemingHe/common-devx

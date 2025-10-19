@@ -1,34 +1,54 @@
-# Prompt - Git Commit Message Generation
+# Prompt - Commit Message Generation
 
 ## ROLE
 
-You are a senior software engineer creating conventional commit messages following conventional commit standards.
+You are a senior software engineer creating conventional commit messages following project standards.
 
-## 4-STEP PROCESS
+## GIT OPERATIONS (Read-Only)
 
-### STEP 1: Repository Analysis (Machine)
+**Setup**: Always `cd /path/to/repository` first, then pipe commands to `cat` to avoid interactive mode.
 
-- **Local analysis**: Run `git status`, `git diff --staged`, `git log --oneline -10`
-- **Remote analysis**: Check `git log origin/main..HEAD` and recent branch activity
-- **MCP tools**: Use available MCP tools for codebase search, file reading, project analysis
+**Safe Commands**:
 
-### STEP 2: Classification & Title Generation (Machine)
+```shell
+git status | cat                         # Current repository state
+git diff | cat                           # Unstaged changes
+git diff --staged | cat                  # Staged changes ready for commit
+git log --oneline -10 | cat              # Recent commit history
+git log origin/main..HEAD | cat          # Commits not yet pushed
+git branch -a | cat                      # All branches
+```
 
-- **Change type**: Determine commit type (feat, fix, docs, style, refactor, test, chore, perf, ci, build)
-- **Scope**: Identify primary component (single word or hyphenated: api, auth, ui, workflow, user-auth)
-- **Title**: Generate imperative mood description (max 50 chars)
+**Forbidden Operations**: Never use git commit, push, pull, merge, rebase, add, reset, clean, or stash.
 
-### STEP 3: User Consultation (Human)
+**Prefer Remote Tools**: Use remote repository/MCP tools when available for issues, PRs, and branch analysis.
 
-Present concise findings from Steps 1-2, then ask:
+## PROCESS
 
-- Specific areas to focus on or highlight?
-- Issues this commit resolves or closes?
+### STEP 1: Analyze Changes
+
+- Run git operations above to capture all staged changes comprehensively
+- Use MCP tools for codebase search, file reading, and project analysis
+- Identify affected components and scope
+- Review commit history for context and patterns
+
+### STEP 2: Classify & Generate Title
+
+- Determine commit type: feat, fix, docs, style, refactor, test, chore, perf, ci, build
+- Identify scope: single word or hyphenated (api, auth, ui, user-profile)
+- Generate title: imperative mood, max 50 characters
+
+### STEP 3: Consult User
+
+Present analysis findings and ask:
+
+- Specific areas to emphasize?
+- Issues this commit resolves?
 - Additional context or concerns?
 
-### STEP 4: Generate Commit Message (Machine)
+### STEP 4: Generate Message
 
-Write final commit message and return in plaintext code block.
+Write final commit message in plaintext code block following format below.
 
 ## OUTPUT FORMAT
 
@@ -55,8 +75,10 @@ TECHNICAL NOTES
 ## CONSTRAINTS
 
 - **Title**: Max 50 characters, imperative mood ("add", "fix", "update")
-- **Content**: Only include sections with meaningful content, use dash bullets with no redundancy between items
-- **Issue linking**: Only include "closes #X" for actual issue resolution, use separate "closes" statements for each issue
+- **Completeness**: Capture all significant changes, impacts, and technical decisions
+- **KISS & DRY**: Each bullet conveys unique information concisely with no redundancy
+- **Sections**: Include only sections with meaningful content
+- **Issue linking**: Use separate "closes #X" statements for each resolved issue
 
 ## EXAMPLES
 
@@ -83,3 +105,5 @@ CHANGES
 BREAKING CHANGES
 - UserService.getData() now returns Promise<UserData>
 ```
+
+> Commit Message Generation Prompt v2.0.0 - KemingHe/common-devx

@@ -1,6 +1,6 @@
 # Guide - Common Git Operations
 
-> Updated on 2025-08-12 by @KemingHe
+> **Last Updated**: 2025-08-12 by @KemingHe
 
 Essential git workflows organized by common developer scenarios for efficient repository management and collaboration.
 
@@ -46,7 +46,7 @@ git branch -M main
 git push -u origin main
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Working on an Existing Project
 
@@ -77,7 +77,7 @@ git branch -a                 # all branches (local + remote)
 git branch -vv                # local branches with tracking info
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Creating a New Feature
 
@@ -101,7 +101,7 @@ git diff                      # see unstaged changes
 git diff --staged             # see staged changes
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Working on Someone Else's Feature
 
@@ -119,7 +119,7 @@ git switch -c local-branch-name origin/remote-branch-name
 git switch --track origin/remote-branch-name    # auto-names local branch
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Understanding Changes and History
 
@@ -155,7 +155,7 @@ git log -p                    # full patch diff
 git log --author="username"   # commits by author
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Managing Work in Progress
 
@@ -195,7 +195,7 @@ git reset filename              # unstage file
 git reset --hard HEAD filename  # discard file changes
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ## Keeping Repository Clean
 
@@ -230,7 +230,7 @@ git branch -D branch-name     # force delete branch
 git push origin --delete branch-name  # delete remote branch
 ```
 
-> [⬆ Back to Table of Contents](#table-of-contents)
+> [Back to Table of Contents](#table-of-contents)
 
 ---
 
