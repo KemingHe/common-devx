@@ -1,6 +1,6 @@
 # README - Common DevX
 
-> **Last Updated**: 2025-10-19 by Keming He
+> **Last Updated**: 2025-10-29 by Keming He
 
 ## Overview
 
@@ -28,7 +28,7 @@ common-devx/
 
 ## Quick Links
 
-- [`.github/README.md`](./.github/README.md) - GitHub issue and PR templates
+- [`.github/`](./.github/) - GitHub issue and PR templates
 - [`guides/README.md`](./guides/README.md) - Git operations and workflows
 - [`meetings/README.md`](./meetings/README.md) - Meeting agendas, memos, and standups
 - [`prompts/README.md`](./prompts/README.md) - AI-assisted documentation generation
