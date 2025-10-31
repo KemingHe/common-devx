@@ -70,6 +70,8 @@ find . -name "*.py" -exec grep -n "pattern" {} +    # search only Python files (
 
 > [Back to Table of Contents](#table-of-contents)
 
+---
+
 ## Output Control
 
 Manage command output for non-interactive execution and clean workflows.
@@ -114,6 +116,8 @@ find . -name "*.tmp" 2> /dev/null      # ignore permission errors
 ```
 
 > [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## File Operations
 

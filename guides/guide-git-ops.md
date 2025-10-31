@@ -48,6 +48,8 @@ git push -u origin main
 
 > [Back to Table of Contents](#table-of-contents)
 
+---
+
 ## Working on an Existing Project
 
 Clone a repository and understand its current state.
@@ -79,6 +81,8 @@ git branch -vv                # local branches with tracking info
 
 > [Back to Table of Contents](#table-of-contents)
 
+---
+
 ## Creating a New Feature
 
 Start new feature development with proper branch naming and tracking.
@@ -103,6 +107,8 @@ git diff --staged             # see staged changes
 
 > [Back to Table of Contents](#table-of-contents)
 
+---
+
 ## Working on Someone Else's Feature
 
 Checkout and track existing remote branches for collaboration.
@@ -120,6 +126,8 @@ git switch --track origin/remote-branch-name    # auto-names local branch
 ```
 
 > [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Understanding Changes and History
 
@@ -156,6 +164,8 @@ git log --author="username"   # commits by author
 ```
 
 > [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Managing Work in Progress
 
@@ -196,6 +206,8 @@ git reset --hard HEAD filename  # discard file changes
 ```
 
 > [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Keeping Repository Clean
 
