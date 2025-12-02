@@ -6,6 +6,11 @@ labels: 'enhancement'
 
 ---
 
+### Related (optional)
+
+- #[issue/PR number]: [brief description]
+- [external link]: [brief description]
+
 ### Problem
 
 [Description of the problem or limitation this addresses]
