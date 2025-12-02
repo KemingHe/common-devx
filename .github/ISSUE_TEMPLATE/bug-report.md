@@ -6,6 +6,11 @@ labels: 'bug'
 
 ---
 
+### Related (optional)
+
+- #[issue/PR number]: [brief description]
+- [external link]: [brief description]
+
 ### What Happened?
 
 **Expected**: [What should happen]
