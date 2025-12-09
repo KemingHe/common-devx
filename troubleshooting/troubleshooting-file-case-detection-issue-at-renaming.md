@@ -1,6 +1,6 @@
 # Troubleshooting - File Case Detection Issue at Renaming
 
-> Update on 2025-09-13 by @KemingHe
+> **Last Updated**: 2025-09-13 by Keming He
 
 ## Problem
 

@@ -1,6 +1,6 @@
 # MEETING MEMO
 
-> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by [First Name Last Name]
 
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
@@ -41,4 +41,4 @@
 
 ---
 
-> Meeting Memo Template v1.0.8 - KemingHe/common-devx
+> Meeting Memo Template v1.0.9 - KemingHe/common-devx

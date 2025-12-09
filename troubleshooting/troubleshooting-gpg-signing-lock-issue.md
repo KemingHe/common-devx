@@ -1,6 +1,6 @@
 # Troubleshooting - GPG Signing Issue
 
-> Update on 2025-09-13 by @KemingHe
+> **Last Updated**: 2025-09-13 by Keming He
 
 ## Problem
 
