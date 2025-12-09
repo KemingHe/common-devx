@@ -1,6 +1,6 @@
 # Contacts
 
-> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by [First Name Last Name]
 
 This document provides essential contact information for the [project/team name] team, helping developers direct questions to the appropriate specialist and prepare for meetings.
 
@@ -18,4 +18,4 @@ This document provides essential contact information for the [project/team name]
 
 ---
 
-> Contacts Template v1.0.1 - KemingHe/common-devx
+> Contacts Template v1.0.2 - KemingHe/common-devx

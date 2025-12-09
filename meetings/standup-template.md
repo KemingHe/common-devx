@@ -1,6 +1,6 @@
 # Daily Standup on [YYYY-MM-DD]
 
-> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by [First Name Last Name]
 
 ## Completed
 
@@ -16,4 +16,4 @@
 
 ---
 
-> Standup Template v1.0.13 - KemingHe/common-devx
+> Standup Template v1.0.14 - KemingHe/common-devx

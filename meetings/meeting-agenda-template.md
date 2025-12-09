@@ -1,6 +1,6 @@
 # MEETING AGENDA
 
-> **Last Updated**: [YYYY-MM-DD] by @[GitHubUsername]
+> **Last Updated**: [YYYY-MM-DD] by [First Name Last Name]
 
 - **Date**: [YYYY-MM-DD]
 - **Time**: [HH:MM-HH:MMam/pm] [Timezone] ([X] minutes)
@@ -33,4 +33,4 @@
 
 ---
 
-> Meeting Agenda Template v1.0.7 - KemingHe/common-devx
+> Meeting Agenda Template v1.0.8 - KemingHe/common-devx

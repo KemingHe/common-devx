@@ -1,6 +1,6 @@
 # Contributing
 
-> **Last Updated**: 2025-08-08 by @KemingHe
+> **Last Updated**: 2025-08-08 by Keming He
 
 Development workflow for contributors using conventional commits, quality gates, issue-driven development, and AI-assisted automation.
 
