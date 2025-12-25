@@ -95,8 +95,7 @@ READMEs are for **onboarding** (what is this?), **navigation** (where to find de
 ### Length and Scannability
 - **Target**: ~50 lines, maximum 100 lines
 - **Reading time**: Under 1 minute (quick scan should reveal directory purpose)
-- **If exceeding 100 lines**: Directory may be too complex - prompt developer to consider breaking into subdomain directories with their own 
-READMEs
+- **If exceeding 100 lines**: Directory may be too complex - prompt developer to consider breaking into subdomain directories with their own READMEs
 
 ### Domain Separation
 Each README documents ONLY its level. Parent mentions children exist and links to their READMEs. NO overlap.
@@ -195,4 +194,4 @@ For complete workflows, see:
 - [`../docs/decision.md`](../docs/decision.md) - Decision rationale or guide
 - [External resource](https://url.com) - When to use this resource
 
-> README Template v1.0.2 - KemingHe/common-devx
+> README Template v1.0.3 - KemingHe/common-devx
