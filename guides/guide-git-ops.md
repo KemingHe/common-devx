@@ -1,6 +1,6 @@
 # Guide - Common Git Operations
 
-> **Last Updated**: 2025-08-12 by Keming He
+> **Last Updated**: 2025-12-25 by Keming He
 
 Essential git workflows organized by common developer scenarios for efficient repository management and collaboration.
 
@@ -24,7 +24,8 @@ Essential git workflows organized by common developer scenarios for efficient re
     - [Current State](#current-state)
     - [Commit History](#commit-history)
   - [Managing Work in Progress](#managing-work-in-progress)
-    - [Stash Operations](#stash-operations)
+    - [Switching Context Mid-Work](#switching-context-mid-work)
+    - [Viewing Stashed Changes](#viewing-stashed-changes)
     - [Reset Operations](#reset-operations)
   - [Keeping Repository Clean](#keeping-repository-clean)
     - [Update References](#update-references)
@@ -46,7 +47,7 @@ git branch -M main
 git push -u origin main
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -79,7 +80,7 @@ git branch -a                 # all branches (local + remote)
 git branch -vv                # local branches with tracking info
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -105,7 +106,7 @@ git diff                      # see unstaged changes
 git diff --staged             # see staged changes
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -125,7 +126,7 @@ git switch -c local-branch-name origin/remote-branch-name
 git switch --track origin/remote-branch-name    # auto-names local branch
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -163,7 +164,7 @@ git log -p                    # full patch diff
 git log --author="username"   # commits by author
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -171,19 +172,53 @@ git log --author="username"   # commits by author
 
 Handle incomplete work with stashing and resetting.
 
-### Stash Operations
+### Switching Context Mid-Work
+
+Temporarily shelve changes when you need to switch branches for urgent tasks.
+
+> [!TIP] When to stash
+>
+> Use stashing when you're mid-work on a feature and need to:
+>
+> - Address an urgent bug on another branch
+> - Pull latest changes without committing incomplete work
+> - Test something on a clean working directory
 
 ```bash
-# Stash changes temporarily
-git stash                     # stash tracked files
+# Stash current changes
+git stash                     # stash tracked files only
 git stash -u                  # include untracked files
-git stash -m "description"    # stash with message
+git stash -m "WIP: auth"      # stash with descriptive message
 
-# Retrieve stashed work
-git stash list                # view all stashes
-git stash pop                 # apply and remove latest stash
-git stash apply stash@{0}     # apply specific stash
-git stash drop stash@{0}      # delete specific stash
+# Switch context, do other work, then return
+# e.g. git switch main ... git switch feature-branch
+
+# Restore stashed work
+git stash pop                 # apply latest and remove from list
+git stash apply               # apply latest but keep in list
+```
+
+### Viewing Stashed Changes
+
+Inspect stashed work before applying or cleaning up old stashes.
+
+> [!NOTE] Stash indexing
+>
+> Stashes use a 0-indexed LIFO stack. Most recent stash is `stash@{0}`, older stashes shift to higher indices as new ones are added.
+
+```bash
+# List all stashes
+git stash list                # view all stashes with indices
+
+# Inspect stash contents
+git stash show                # summary of latest stash (stash@{0})
+git stash show -p             # full diff of latest stash
+git stash show -p stash@{1}   # full diff of second-newest stash
+
+# Clean up stashes
+git stash drop                # delete latest stash
+git stash drop stash@{1}      # delete specific stash by index
+git stash clear               # delete ALL stashes (IRREVERSIBLE)
 ```
 
 ### Reset Operations
@@ -205,7 +240,7 @@ git reset filename              # unstage file
 git reset --hard HEAD filename  # discard file changes
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -242,8 +277,8 @@ git branch -D branch-name     # force delete branch
 git push origin --delete branch-name  # delete remote branch
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
-> Common Git Operations Guide v1.0.0 - KemingHe/common-devx
+> Common Git Operations Guide v1.1.0 - KemingHe/common-devx

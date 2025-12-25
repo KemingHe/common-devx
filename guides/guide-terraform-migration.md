@@ -68,7 +68,7 @@ module.storage.aws_s3_bucket.data["production"]
 - Variable names (`var.name`)
 - Variable values or resource attributes
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -113,7 +113,7 @@ terraform plan
 
 **If you see destroy/create for existing resources you intended to keep**, stop and perform state migration.
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -185,7 +185,7 @@ resource "aws_s3_bucket" "data" {
 
 **See**: [Migration Strategies - Import After Remove](#import-after-remove)
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -253,7 +253,7 @@ resource "aws_instance" "web" {
 
 **Action**: Run `terraform apply` to update resources. Terraform handles attribute changes automatically.
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -331,7 +331,7 @@ moved {
 
 **Docs**: [Refactoring with moved blocks](https://developer.hashicorp.com/terraform/language/modules/develop/refactoring#move-a-resource-or-module)
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -430,7 +430,7 @@ terraform import 'aws_s3_bucket.data["prod"]' data-prod
 terraform plan  # Verify no changes
 ```
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -460,7 +460,7 @@ terraform plan  # Verify no changes
 - Backup final state: `terraform state pull > post-migration.tfstate`
 - Update documentation with any API changes
 
-> [Back to Table of Contents](#table-of-contents)
+> [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
