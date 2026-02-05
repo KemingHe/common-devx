@@ -13,12 +13,12 @@ labels: 'enhancement'
 
 ### Problem
 
-[Description of the problem or limitation this addresses]
+[What limitation or pain point does this address?]
 
 ### Proposed Solution
 
-[Description of the desired feature or enhancement]
+[What should be built? How should it work?]
 
-### Alternatives Considered
+### Alternatives Considered (optional)
 
-[Other approaches considered, if any, and evaluation] (optional)
+[Other approaches evaluated and why this solution is preferred]
