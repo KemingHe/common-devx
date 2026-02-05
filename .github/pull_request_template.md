@@ -5,22 +5,19 @@ title: 'type(scope): brief description'
 
 ---
 
-[Brief description of changes and purpose]
+[Brief description of changes and why]
 
-Closes #[issue-number]
+closes #[issue-number]
 
-> [!WARNING]
->
-> [Any merge requirements or dependencies]
+### Changes
 
-### Key Features
+- [Key change 1]
+- [Key change 2]
 
-- **[Feature name]**: [Description of functionality or change]
+### Impact (optional)
 
-### Business Impact
+- [How this affects users, performance, or system behavior]
 
-- **[Impact area]**: [How this benefits users or business]
+### Notes (optional)
 
-### Technical Highlights
-
-- **[Technical aspect]**: [Implementation details or improvements]
+- [Merge dependencies, breaking changes, or review considerations]

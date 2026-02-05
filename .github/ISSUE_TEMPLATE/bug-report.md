@@ -13,19 +13,17 @@ labels: 'bug'
 
 ### What Happened?
 
-**Expected**: [What should happen]
-**Actual**: [What actually happened]
+Expected: [What should happen]
+
+Actual: [What actually happened]
 
 ### Steps to Reproduce
 
-1. [First step to reproduce]
-2. [Second step to reproduce]
-3. [Third step where error occurs]
+1. [First step]
+2. [Step where error occurs]
 
-Walkthrough recording: [Link to video or screen recording]
-
-### Environment
+### Environment (optional)
 
 - OS: [e.g. macOS 14.0]
-- Browser: [e.g. Chrome 120] (if applicable)
+- Browser: [e.g. Chrome 120]
 - Version: [e.g. v1.0.0]
