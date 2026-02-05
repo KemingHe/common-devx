@@ -36,8 +36,8 @@ Ask your AI agent to review documentation:
 
 ## Related
 
-- [skill-creation](../skill-creation/) - How to create new skills
-- [commit-message](../commit-message/) - Generate commit messages
+- [`skill-creation/README.md`](../skill-creation/README.md) - How to create new skills
+- [`commit-message/README.md`](../commit-message/README.md) - Generate commit messages
 
 ---
 

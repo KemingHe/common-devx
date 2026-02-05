@@ -40,8 +40,8 @@ New types welcome - use descriptive prefixes that categorize the content.
 
 ## References
 
-- [`../agent-skills/README.md`](../agent-skills/README.md) - AI-assisted documentation skills
-- [`../CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines
+- [`agent-skills/README.md`](../agent-skills/README.md) - AI-assisted documentation skills
+- [`CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines
 
 ---
 

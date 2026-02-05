@@ -61,7 +61,7 @@ metadata:
 ## Related
 
 - [agentskills.io/specification](https://agentskills.io/specification) - Official specification
-- [../README.md](../README.md) - Skill catalog
+- [`agent-skills/README.md`](../README.md) - Skill catalog
 
 ---
 

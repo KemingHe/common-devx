@@ -35,8 +35,8 @@ This skill searches for templates in order:
 
 ## Related
 
-- [github-pull-request](../github-pull-request/) - Generate PR descriptions
-- [.github/ISSUE_TEMPLATE/](../../.github/ISSUE_TEMPLATE/) - Repository issue templates
+- [`github-pull-request/README.md`](../github-pull-request/README.md) - Generate PR descriptions
+- [`.github/ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/) - Repository issue templates
 
 ---
 

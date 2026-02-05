@@ -41,8 +41,8 @@ The AI will analyze the directory and generate a self-contained README following
 
 ## Related
 
-- [`../documentation-review/README.md`](../documentation-review/README.md) - Review READMEs for consistency
-- [`../skill-creation/README.md`](../skill-creation/README.md) - How agent skills work
+- [`documentation-review/README.md`](../documentation-review/README.md) - Review READMEs for consistency
+- [`skill-creation/README.md`](../skill-creation/README.md) - How agent skills work
 
 ---
 

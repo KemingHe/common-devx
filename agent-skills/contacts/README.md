@@ -41,8 +41,8 @@ contacts/
 
 ## Related
 
-- [meeting-memo](../meeting-memo/) - Reference contacts in meeting docs
-- [meeting-agenda](../meeting-agenda/) - Include attendee info in agendas
+- [`meeting-memo/README.md`](../meeting-memo/README.md) - Reference contacts in meeting docs
+- [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Include attendee info in agendas
 
 ---
 

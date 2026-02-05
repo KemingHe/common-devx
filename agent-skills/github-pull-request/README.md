@@ -38,9 +38,9 @@ This skill searches for templates in order:
 
 ## Related
 
-- [github-issue](../github-issue/) - Generate issue descriptions
-- [commit-message](../commit-message/) - Generate commit messages
-- [.github/pull_request_template.md](../../.github/pull_request_template.md) - Repository PR template
+- [`github-issue/README.md`](../github-issue/README.md) - Generate issue descriptions
+- [`commit-message/README.md`](../commit-message/README.md) - Generate commit messages
+- [`.github/pull_request_template.md`](../../.github/pull_request_template.md) - Repository PR template
 
 ---
 

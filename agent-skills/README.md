@@ -40,8 +40,8 @@ See [`skill-creation/README.md`](./skill-creation/README.md) for the full proces
 ## References
 
 - [agentskills.io Specification](https://agentskills.io/specification) - Official standard
-- [`../CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines
-- [`../SECURITY.md`](../SECURITY.md) - Security and verification guidance
+- [`CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines
+- [`SECURITY.md`](../SECURITY.md) - Security and verification guidance
 
 ---
 

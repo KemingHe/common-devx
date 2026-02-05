@@ -34,8 +34,8 @@ meeting-memo/
 
 ## Related
 
-- [meeting-agenda](../meeting-agenda/) - Generate meeting agendas
-- [contacts](../contacts/) - Manage contact information
+- [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Generate meeting agendas
+- [`contacts/README.md`](../contacts/README.md) - Manage contact information
 
 ---
 
