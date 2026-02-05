@@ -1,134 +1,97 @@
 # Contributing
 
-> **Last Updated**: 2025-08-08 by Keming He
+> **Last Updated**: 2026-02-05 by Keming He
 
-Development workflow for contributors using conventional commits, quality gates, issue-driven development, and AI-assisted automation.
+How to contribute to `common-devx` - adding skills, guides, and templates.
 
-## Getting Started
-
-### Initial Setup
-
-```shell
-# Clone and setup
-git clone <repo-url> && cd <project-name>
-[package-manager] install
-
-# Configure environment (if applicable)
-cp .env.example .env
-```
+## Requirements
 
 > [!IMPORTANT]
 >
-> Follow project-specific environment setup documentation to configure required variables and dependencies.
+> All contributions require an approved issue first.
 
-## Project Structure
+| ✅ Do | ❌ Don't |
+| :--- | :--- |
+| Wait for issue approval from [@KemingHe](https://github.com/KemingHe) | Start work before approval |
+| Link PR to an approved issue | Submit PRs without issue reference |
+| Self-review all content (especially AI-assisted) | Submit unreviewed AI-generated content (AI-slop) |
+| Respond to feedback within 14 days | Let PR go stale |
 
-```text
-project-root/
-├── .github/                     # GitHub templates and workflows
-├── docs/                        # Documentation
-├── prompts/                     # AI-assisted development prompts
-├── src/                         # Source code
-├── tests/ or __tests__/         # Test files
-├── [config-files]               # Package manager and tool configs
-└── README.md                    # Project overview
+**AI-assisted contributions are welcome**, but you must review and understand _every line_. PRs that appear to be unreviewed AI output will be closed.
+
+## Contribution Types
+
+| Type | Location | Guide |
+| :--- | :--- | :--- |
+| Agent skills | `agent-skills/[skill-name]/` | [`skill-creation/README.md`](./agent-skills/skill-creation/README.md) |
+| Human guides | `human-guides/` | `[type]-[tech-and-description].md` pattern |
+| GitHub templates | `.github/` | Edit directly |
+
+## Workflow
+
+```plaintext
+1. Issue  -->  2. Approval  -->  3. Branch  -->  4. Work  -->  5. Review  -->  6. PR
 ```
 
-## Development Workflow
+### 1. Create Issue
 
-### Essential Commands
+Use [issue templates](./.github/ISSUE_TEMPLATE/) to describe your proposed change.
 
-- `[package-manager] verify` - Combines format + lint + type-check + test
-- `[package-manager] build` - Production build
+### 2. Get Approval
 
-> [!TIP]
->
-> See `package.json` or project documentation for comprehensive list of commands.
+| Issue Type | When to Proceed |
+| :--- | :--- |
+| Bug fix | Once confirmed as valid bug |
+| Feature request | When labeled `approved` |
+| Minor doc fix | Can proceed (typos, broken links) |
+| Significant change | When labeled `approved` |
 
-### Pre-Commit Requirements
+### 3. Branch
 
 ```shell
-[package-manager] verify  # Comprehensive quality checks
+git checkout -b [type]/[description]/[your-username]
 ```
 
-## Git Conventions
+### 4. Work
 
-**Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`
+Follow conventions below. Use AI tools if helpful, but review everything.
 
-### Branch Naming
+### 5. Self-Review
 
-Format: `<type>/<scope>/<assignee>`
+Before submitting:
 
-```text
-feat/auth/username
-fix/api-validation/username
-docs/readme-update/username
-```
+- [ ] You can explain every change
+- [ ] Follows existing patterns
+- [ ] No `[TODO]` or `[TBD]` placeholders
+- [ ] Links work, versions match (frontmatter = footer)
+- [ ] Last Updated date is current
 
-### Commit Messages
+### 6. Submit PR
 
-Format: `<type>(<scope>): <description>`
+Link to the approved issue. Use the [PR template](./.github/pull_request_template.md).
 
-```text
-feat(auth): add JWT token validation
-fix(api): resolve CORS configuration
-docs(readme): update installation instructions
-```
+## Conventions
 
-> [!TIP]
->
-> **AI-assisted approach**: Use [commit message generation prompt](./prompts/prompt-commit-msg-gen.md) for structured, conventional commits with automated repository analysis.
+**Commits**: `type(scope): description`
 
-## Issue and PR Workflow
+| Type | Use For |
+| :--- | :--- |
+| `feat` | New skill, guide, template |
+| `fix` | Corrections |
+| `docs` | README updates |
+| `refactor` | Restructuring |
 
-### Creating Issues
+**Branches**: `[type]/[description]/[username]`
 
-- **Manual approach**: Use GitHub [issue templates](./.github/ISSUE_TEMPLATE/) for bug reports and feature requests.
-- **AI-assisted approach**: Use [issue generation prompt](./prompts/prompt-issue-gen.md) with AI assistant for structured, comprehensive issues.
+**Files**:
 
-### Creating Pull Requests
+- Skills: `agent-skills/[skill-name]/SKILL.md`
+- Guides: `human-guides/[type]-[tech-and-description].md`
 
-1. **Issue linkage**: Every PR must reference an issue
-2. **Quality gates**: All checks must pass (`[package-manager] verify`)
-3. **Code review**: Minimum one approval required
-4. **Testing**: Comprehensive test coverage for changes
+## Questions
 
-- **Manual approach**: Use [pull request template](./.github/pull_request_template.md) to ensure complete information.
-- **AI-assisted approach**: Use [PR generation prompt](./prompts/prompt-pull-request-gen.md) with AI assistant for automated PR descriptions with git analysis.
-
-## Code Quality Standards
-
-### General Guidelines
-
-- Write self-documenting code with clear naming
-- Include comprehensive error handling
-- Follow project-specific style guides and best practices
-- Maintain test coverage for all changes
-
-### Testing Requirements
-
-- **Unit tests**: Core logic and utilities (`*.unit.test.[js|ts]`)
-- **Integration tests**: API endpoints and workflows (`*.integration.test.[js|ts]`)
-- **E2E tests**: Critical user paths (`*.e2e.test.[js|ts]`)
-
-**Test structure**: Tests co-located with source files or organized in `__tests__/` directories
-
-## Troubleshooting
-
-### Common Issues
-
-- **Lint/format issues**: Run `[package-manager] format` then `[package-manager] lint --fix`
-- **Test failures**: Check environment setup and dependencies
-- **Build errors**: Verify configuration files and dependencies
-- **Dependency conflicts**: Clear cache and reinstall packages
-
-### Getting Help
-
-- **Environment setup**: Reference project-specific documentation and README.md
-- **Issue and PR templates**: Use [GitHub templates](./.github/) for consistent formatting
-- **AI automation**: Leverage [prompts](./prompts/) for automated documentation generation
-- **Team workflows**: Reference [meeting templates](./meetings/) for structured communication
+Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues).
 
 ---
 
-> Contributing Guide Template v1.0.1 - KemingHe/common-devx
+> Contributing Guide v2.0.0 - KemingHe/common-devx
