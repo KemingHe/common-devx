@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Documentation Review
@@ -41,8 +41,24 @@ Determine files to review:
 | **Completeness** | Required sections present, no unfilled placeholders |
 | **Freshness** | Last Updated date, version numbers, changelog entries |
 | **Characters** | QWERTY-only, no em-dashes/smart quotes/emojis (exception: `↑`) |
+| **Linter** | Check IDE/editor linter errors when available |
 
-### Step 3: Report Findings
+### Step 3: Check Linter Errors
+
+When linter tooling is available (IDE, markdownlint, etc.):
+
+- Run linter on files in scope
+- Include linter errors in findings table
+- Distinguish between new errors (introduced by changes) and pre-existing
+
+Common markdown linter catches:
+
+- Missing language specifier on fenced code blocks
+- Inconsistent list indentation
+- Trailing whitespace or missing final newline
+- Invalid link references
+
+### Step 4: Report Findings
 
 Present issues in structured table:
 
@@ -64,14 +80,16 @@ Summarize with:
 - **Version drift**: Frontmatter version differs from footer
 - **Stale links**: Renamed files but not references
 - **Placeholder remnants**: `[TODO]` or `[TBD]` left in final docs
+- **Linter errors**: Ignoring IDE warnings on markdown files
 
 ## Constraints
 
 - **Documentation only**: Edit txt, md, mdx, rst files - no functional code changes
 - **Structured output**: Always use table format for findings
 - **Prioritized**: Critical issues (broken links, wrong versions) before style issues
+- **Linter-aware**: Check and report linter errors when tooling is available
 - **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
 
 ---
 
-> Documentation Review Skill v1.0.0 - KemingHe/common-devx
+> Documentation Review Skill v1.1.0 - KemingHe/common-devx

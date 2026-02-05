@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "2.0.0"
+  version: "2.1.0"
 ---
 
 # README Generation
@@ -50,11 +50,35 @@ Generate self-contained README files that enable developers to instantly underst
 - Documents subdirectory internals (violates loose coupling)
 - Over 100 lines (too much for quick orientation)
 
+## Documenting Patterns (Large/Flat Directories)
+
+For directories with many similarly-named files, consider documenting the **naming pattern** instead of listing every file. This reduces maintenance when files are added or removed.
+
+**Example pattern table**:
+
+| Pattern | Purpose |
+| :--- | :--- |
+| `[type]-[tech-and-description].md` | Guides categorized by type |
+| `[skill-name]/` | Skill directories with standard structure |
+
+Use your judgment - patterns work well for consistent naming conventions, explicit lists work better for small or varied collections.
+
 ## Asset Resolution
 
 1. Check `./assets/readme-template.md` for README template
 2. If not found, search `**/readme-template.md` in repository
 3. If still not found, use minimal structure from this skill
+
+## Directory Exploration
+
+**Preferred**: Use `tree` command for hierarchical view (may not be installed on all systems):
+
+```shell
+tree -L 2 [directory]          # 2-level depth
+tree -L 1 --dirsfirst          # Directories first, 1 level
+```
+
+**Fallback**: Use `ls` or IDE file listing for flat view.
 
 ## Git Operations (Read-Only)
 
@@ -69,8 +93,9 @@ Generate self-contained README files that enable developers to instantly underst
 ### Step 1: Understand Context
 
 - Read root README.md and parent README.md (if nested)
-- List files at THIS level only (non-recursive)
+- Use `tree` or list files at THIS level only (non-recursive)
 - Identify: What problem does this directory solve?
+- Look for naming patterns in files/subdirectories
 
 ### Step 2: Write with 30-Second Test in Mind
 
@@ -78,7 +103,7 @@ Structure for scannability:
 
 1. **Title + metadata** - identity
 2. **Overview** - what and why (most critical - first thing devs read)
-3. **Directory structure** - what's here (this level only)
+3. **Directory structure or patterns** - what's here (this level only)
 4. **Quick links** - where to go next
 5. **Prerequisites/Getting Started** - how to use (if operational)
 6. **References** - additional context
@@ -100,10 +125,11 @@ Present README in markdown following template structure. Target ~50 lines, max 1
 - **Self-contained**: README makes sense without parent context
 - **30-second rule**: Purpose clear at first scan
 - **Non-recursive**: Document THIS level only, link to subdirectory READMEs
+- **Pattern over listing**: Consider documenting naming patterns for large directories
 - **Link to README.md**: Use `[Dir](../dir/README.md)` not `../dir/`
 - **KISS and DRY**: Say it once, link elsewhere
 - **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode
 
 ---
 
-> README Generation Skill v2.0.0 - KemingHe/common-devx
+> README Generation Skill v2.1.0 - KemingHe/common-devx

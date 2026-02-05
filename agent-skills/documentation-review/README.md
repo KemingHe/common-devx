@@ -20,6 +20,7 @@ Ask your AI agent to review documentation:
 | Correctness | Valid YAML, working links |
 | Completeness | Required sections, no placeholders |
 | Freshness | Last Updated dates, versions |
+| Linter | IDE/editor warnings when available |
 
 ## Common Catches
 
@@ -27,6 +28,7 @@ Ask your AI agent to review documentation:
 - Version mismatch between frontmatter and footer
 - Stale links after file renames
 - Leftover `[TODO]` placeholders
+- Ignoring linter warnings on markdown files
 
 ## Files
 
