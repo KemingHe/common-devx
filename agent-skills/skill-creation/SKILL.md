@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Skill Creation
@@ -38,6 +38,25 @@ Before creating a skill, understand:
 - **Inputs**: What information does the agent need from the user?
 - **Outputs**: What should the agent produce?
 - **Assets**: Are there templates or reference materials needed?
+
+**When refactoring from existing prompt/content**:
+
+Analyze the original for critical elements that must be preserved:
+
+| Element | Look For | Why It Matters |
+| :--- | :--- | :--- |
+| **Safety mechanisms** | Read-only operations, forbidden actions, pipe to `cat` | Prevents destructive actions |
+| **Setup instructions** | `cd` to directory, environment prep | Ensures correct execution context |
+| **Role/persona** | "You are a..." statements | Sets expertise level and tone |
+| **Tool guidance** | MCP tools, remote APIs, search patterns | Enables deeper analysis |
+| **User consultation** | Questions to ask user | Ensures alignment with intent |
+| **Edge cases** | Error handling, fallbacks | Improves robustness |
+
+**Active user feedback**: Present your analysis of what to keep, improve, or remove. Ask:
+
+- Are there critical behaviors to preserve?
+- What should be improved or modernized?
+- Any new requirements to add?
 
 ### Step 2: Create Directory Structure
 
@@ -87,13 +106,31 @@ metadata:
 Follow this structure (adapt sections as needed):
 
 1. **Title**: `# Skill Name` (human-readable)
-2. **When to Use**: Scenarios that trigger this skill
-3. **Asset Resolution**: How to find templates (local first, then search)
-4. **Process**: Step-by-step instructions for the agent
-5. **Output Format**: Expected output structure
-6. **Constraints**: Rules and limitations
-7. **Examples**: Good/bad examples if helpful
-8. **Footer**: Version tag `> Skill Name vX.Y.Z - Repo`
+2. **Temporary persona**: Brief expertise statement (replaces ROLE for skill context)
+3. **When to Use**: Scenarios that trigger this skill
+4. **Asset Resolution**: How to find templates (local first, then search)
+5. **Safety section**: For skills with side effects - safe vs forbidden operations
+6. **Process**: Step-by-step instructions for the agent
+7. **Output Format**: Expected output structure
+8. **Constraints**: Rules and limitations
+9. **Examples**: Good/bad examples if helpful
+10. **Footer**: Version tag `> Skill Name Skill vX.Y.Z - Repo`
+
+**Safety section pattern** (for skills that interact with external systems):
+
+```markdown
+## [System] Operations (Read-Only)
+
+This skill performs read-only reconnaissance. Never modify [system] state.
+
+**Setup**: [Any required preparation, e.g., pipe to cat for git]
+
+**Safe commands**: [List of allowed operations]
+
+**Forbidden operations**: [List of prohibited actions]
+
+**Prefer remote tools**: [MCP/API alternatives when available]
+```
 
 ### Step 5: Create Assets (if needed)
 
@@ -171,4 +208,4 @@ Full specification: [agentskills.io/specification](https://agentskills.io/specif
 
 ---
 
-> Skill Creation v1.0.0 - KemingHe/common-devx
+> Skill Creation Skill v1.1.0 - KemingHe/common-devx
