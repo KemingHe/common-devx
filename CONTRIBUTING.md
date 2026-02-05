@@ -4,6 +4,15 @@
 
 How to contribute to `common-devx` - adding skills, guides, and templates.
 
+## Development Model
+
+This repository uses **trunk-based development**:
+
+- `main` is the single source of truth
+- Feature branches are short-lived (days, not weeks)
+- All PRs merge to `main` via squash-and-merge
+- Rebase before submitting PR (see [`use-cases-git-cli.md`](./human-guides/use-cases-git-cli.md))
+
 ## Requirements
 
 > [!IMPORTANT]
@@ -13,8 +22,10 @@ How to contribute to `common-devx` - adding skills, guides, and templates.
 | ✅ Do | ❌ Don't |
 | :--- | :--- |
 | Wait for issue approval from [@KemingHe](https://github.com/KemingHe) | Start work before approval |
-| Link PR to an approved issue | Submit PRs without issue reference |
-| Self-review all content (especially AI-assisted) | Submit unreviewed AI-generated content (AI-slop) |
+| One PR per issue | Multi-issue PRs |
+| Keep branches short-lived | Long-standing feature branches |
+| Rebase before submitting PR | Merge commits from main |
+| Self-review all content | Submit unreviewed AI-generated content (AI-slop) |
 | Respond to feedback within 14 days | Let PR go stale |
 
 **AI-assisted contributions are welcome**, but you must review and understand _every line_. PRs that appear to be unreviewed AI output will be closed.
@@ -94,4 +105,4 @@ Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues).
 
 ---
 
-> Contributing Guide v2.0.0 - KemingHe/common-devx
+> Contributing Guide v2.1.0 - KemingHe/common-devx
