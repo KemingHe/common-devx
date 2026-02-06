@@ -1,6 +1,6 @@
 # Security Policy
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
 
 Security considerations for using and contributing to common-devx.
 
@@ -24,6 +24,17 @@ When using skills from this repository:
 2. **Review output** - Verify AI-generated content is accurate and appropriate
 3. **Check for sensitive data** - Ensure no credentials, secrets, or PII are exposed
 4. **Validate links and paths** - Confirm references point to correct locations
+
+## Development Security
+
+Secure your development workflow with these practices:
+
+| CIA Component | Practice | Guide |
+| :--- | :--- | :--- |
+| **Confidentiality** | SSH key authentication | [`use-cases-ssh-authentication.md`](./human-guides/use-cases-ssh-authentication.md) |
+| **Integrity** | GPG commit signing | [`use-cases-gpg-commit-signing.md`](./human-guides/use-cases-gpg-commit-signing.md) |
+
+These guides apply to any Git-based workflow, not just this repository.
 
 ## Reporting Issues
 
@@ -68,4 +79,4 @@ If you discover a security issue:
 
 ---
 
-> Security Policy v1.0.0 - KemingHe/common-devx
+> Security Policy v1.1.0 - KemingHe/common-devx

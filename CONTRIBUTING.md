@@ -4,6 +4,13 @@
 
 How to contribute to `common-devx` - adding skills, guides, and templates.
 
+## Prerequisites
+
+Before contributing, ensure you have:
+
+- SSH key configured for GitHub access (see [`use-cases-ssh-authentication.md`](./human-guides/use-cases-ssh-authentication.md))
+- GPG key configured for commit signing (see [`use-cases-gpg-commit-signing.md`](./human-guides/use-cases-gpg-commit-signing.md))
+
 ## Development Model
 
 This repository uses **trunk-based development**:
@@ -105,4 +112,4 @@ Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues).
 
 ---
 
-> Contributing Guide v2.1.0 - KemingHe/common-devx
+> Contributing Guide v2.2.0 - KemingHe/common-devx
