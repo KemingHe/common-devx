@@ -1,6 +1,6 @@
 # Contributing
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
 
 How to contribute to `common-devx` - adding skills, guides, and templates.
 
@@ -11,7 +11,7 @@ This repository uses **trunk-based development**:
 - `main` is the single source of truth
 - Feature branches are short-lived (days, not weeks)
 - All PRs merge to `main` via squash-and-merge
-- Rebase before submitting PR (see [`use-cases-git-cli.md`](./human-guides/use-cases-git-cli.md))
+- Rebase before submitting PR (see [`use-cases-git.md`](./human-guides/use-cases-git.md))
 
 ## Requirements
 
