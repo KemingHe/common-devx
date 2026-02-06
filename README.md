@@ -28,7 +28,7 @@ Available skills: commit messages, issues, PRs, meeting memos, READMEs, and more
 
 Browse [`human-guides/`](./human-guides/README.md) for:
 
-- Git, shell, and GPG workflows (`use-cases-*.md`)
+- Git, shell, SSH, and GPG workflows (`use-cases-*.md`)
 - Diagnostic procedures (`diagnosis-*.md`)
 
 ### For Projects

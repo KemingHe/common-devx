@@ -152,8 +152,9 @@ Copy the entire output, including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `--
 
 1. Go to [**GitHub Settings**](https://github.com/settings/) > [**SSH and GPG keys**](https://github.com/settings/keys)
 2. Click **New GPG key**
-3. Paste your public key
-4. Click **Add GPG key**
+3. Title: descriptive name (e.g., "[Device Name] [YYYY]")
+4. Paste your public key into the **Key** field
+5. Click **Add GPG key**
 
 > [↑ Back to Table of Contents](#table-of-contents)
 
@@ -272,4 +273,4 @@ If the issue persists and you need to commit urgently, see [Skip Signing](#skip-
 
 ---
 
-> Use Cases - GPG Commit Signing v1.0.0 - KemingHe/common-devx
+> Use Cases - GPG Commit Signing v1.0.1 - KemingHe/common-devx
