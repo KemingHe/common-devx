@@ -33,6 +33,7 @@ Secure your development workflow with these practices:
 | :--- | :--- | :--- |
 | **Confidentiality** | SSH key authentication | [`use-cases-ssh-authentication.md`](./human-guides/use-cases-ssh-authentication.md) |
 | **Integrity** | GPG commit signing | [`use-cases-gpg-commit-signing.md`](./human-guides/use-cases-gpg-commit-signing.md) |
+| **Availability** | Git version control | [`use-cases-git.md`](./human-guides/use-cases-git.md) |
 
 These guides apply to any Git-based workflow, not just this repository.
 

@@ -125,7 +125,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 1. Go to [**GitHub Settings**](https://github.com/settings/) > [**SSH and GPG keys**](https://github.com/settings/keys)
 2. Click **New SSH key**
-3. Title: descriptive name (e.g., "[Color] MacBook Pro [YYYY]")
+3. Title: descriptive name (e.g., "[Device Name] [YYYY]")
 4. Key type: **Authentication Key**
 5. Paste your public key
 6. Click **Add SSH key**
