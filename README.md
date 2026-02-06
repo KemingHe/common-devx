@@ -1,6 +1,6 @@
 # README - Common DevX
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
 
 Ready-to-use AI skills and human guides for consistent documentation, standardized workflows, and faster project setup. MIT licensed, zero dependencies.
 
@@ -28,9 +28,8 @@ Available skills: commit messages, issues, PRs, meeting memos, READMEs, and more
 
 Browse [`human-guides/`](./human-guides/README.md) for:
 
-- Git and shell workflows (`use-cases-*.md`)
+- Git, shell, and GPG workflows (`use-cases-*.md`)
 - Diagnostic procedures (`diagnosis-*.md`)
-- Issue resolution (`troubleshooting-*.md`)
 
 ### For Projects
 

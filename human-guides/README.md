@@ -1,8 +1,12 @@
 # README - Human Guides
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
 
 Reference documentation for developers - workflows, troubleshooting, and diagnostic guides. Human-readable (not AI skills).
+
+## Platform Support
+
+All guides target **macOS / Linux** with POSIX-compatible shells (sh, bash, zsh) unless noted otherwise. Each guide includes a Platform section with **Windows** alternatives.
 
 ## File Naming Pattern
 
@@ -12,7 +16,6 @@ All guides follow: `[type]-[tech-and-description].md`
 | :--- | :--- |
 | `use-cases-` | Common workflows and operations |
 | `diagnosis-` | Specific investigation procedures |
-| `troubleshooting-` | Issue resolution guides |
 
 New types welcome - use descriptive prefixes that categorize the content.
 
@@ -20,23 +23,20 @@ New types welcome - use descriptive prefixes that categorize the content.
 
 ### Use Cases
 
-- [`use-cases-git-cli.md`](./use-cases-git-cli.md) - Git command-line workflows
-- [`use-cases-linux-shell.md`](./use-cases-linux-shell.md) - Linux shell operations
+- [`use-cases-git.md`](./use-cases-git.md) - Git command-line workflows
+- [`use-cases-shell.md`](./use-cases-shell.md) - Shell operations
+- [`use-cases-gpg-commit-signing.md`](./use-cases-gpg-commit-signing.md) - GPG commit signing
 
 ### Diagnosis
 
 - [`diagnosis-terraform-state-migration.md`](./diagnosis-terraform-state-migration.md) - Terraform state migration
 
-### Troubleshooting
-
-- [`troubleshooting-git-file-case-detection.md`](./troubleshooting-git-file-case-detection.md) - Git case sensitivity
-- [`troubleshooting-gpg-signing-lock.md`](./troubleshooting-gpg-signing-lock.md) - GPG signing lock
-
 ## Adding New Guides
 
 1. Choose or create a type prefix that fits the content
 2. Name the file: `[type]-[tech-and-description].md`
-3. Include problem statement, steps, and verification
+3. Include Platform section after metadata
+4. Include problem statement, steps, and verification
 
 ## References
 

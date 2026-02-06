@@ -1,13 +1,24 @@
-# Use Cases - Git CLI
+# Use Cases - Git
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
+
+## Platform
+
+> [!IMPORTANT]
+>
+> This guide is for **macOS / Linux** users with POSIX-compatible shell (sh, bash, zsh).
+>
+> For **Windows** users: See [Git for Windows](https://gitforwindows.org/) - commands work cross-platform, shell syntax may differ.
 
 Essential git workflows for trunk-based development. Organized by development lifecycle.
 
 ## Table of Contents
 
-- [Use Cases - Git CLI](#use-cases---git-cli)
+- [Use Cases - Git](#use-cases---git)
+  - [Platform](#platform)
   - [Table of Contents](#table-of-contents)
+  - [First-Time Setup](#first-time-setup)
+  - [Multiple Identities](#multiple-identities)
   - [Clone and Setup](#clone-and-setup)
   - [Create Feature Branch](#create-feature-branch)
   - [Work on Changes](#work-on-changes)
@@ -26,7 +37,63 @@ Essential git workflows for trunk-based development. Organized by development li
   - [Recovery and Troubleshooting](#recovery-and-troubleshooting)
     - [Reset Operations](#reset-operations)
     - [Recovery](#recovery)
+    - [File Case Detection](#file-case-detection)
     - [Related Guides](#related-guides)
+
+## First-Time Setup
+
+Configure git identity (required before committing):
+
+```shell
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+> [!TIP]
+>
+> Use the email associated with your GitHub account. For privacy, use your GitHub-provided `noreply` email: `username@users.noreply.github.com`
+
+Verify configuration:
+
+```shell
+git config --global --list
+```
+
+> [↑ Back to Table of Contents](#table-of-contents)
+
+---
+
+## Multiple Identities
+
+> [!NOTE]
+>
+> **Advanced** topic. Skip if you only use one Git identity.
+
+Use `includeIf` to auto-switch identity based on directory, for example:
+
+```gitconfig
+# ~/.gitconfig
+[user]
+    name = Your Name
+    email = personal@email.com
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+```
+
+```gitconfig
+# ~/.gitconfig-work
+[user]
+    name = Your Name
+    email = work@company.com
+    signingkey = WORK_GPG_KEY_ID
+```
+
+Repos under `~/work/` automatically use work identity. No manual switching needed.
+
+> [↑ Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Clone and Setup
 
@@ -251,13 +318,29 @@ git reflog                    # View recent branch states
 git reset --hard [commit-sha] # Reset to specific state
 ```
 
+### File Case Detection
+
+Case-only renames aren't detected on case-insensitive filesystems (macOS, Windows):
+
+```shell
+# Wrong - won't be tracked
+mv readme.md README.md
+git status                    # Shows "nothing to commit"
+
+# Correct - use git mv
+git mv readme.md README.md
+git commit -m "refactor: correct filename casing"
+```
+
+> [!TIP]
+> Always use `git mv` for case changes. Avoid `git config core.ignorecase false` as it breaks compatibility.
+
 ### Related Guides
 
-- [`troubleshooting-gpg-signing-lock.md`](./troubleshooting-gpg-signing-lock.md) - GPG signing issues
-- [`troubleshooting-git-file-case-detection.md`](./troubleshooting-git-file-case-detection.md) - File case sensitivity
+- [`use-cases-gpg-commit-signing.md`](./use-cases-gpg-commit-signing.md) - GPG signing setup and troubleshooting
 
 > [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
-> Use Cases - Git CLI v2.0.0 - KemingHe/common-devx
+> Use Cases - Git v2.1.0 - KemingHe/common-devx
