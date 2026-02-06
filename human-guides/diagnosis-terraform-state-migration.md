@@ -1,12 +1,19 @@
 # Diagnosis - Terraform State Migration
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
+
+## Platform
+
+> [!IMPORTANT]
+>
+> **Platform-agnostic** - Terraform CLI works identically on macOS, Linux, and Windows.
 
 Diagnose and execute state migrations when refactoring Terraform projects.
 
 ## Table of Contents
 
 - [Diagnosis - Terraform State Migration](#diagnosis---terraform-state-migration)
+  - [Platform](#platform)
   - [Table of Contents](#table-of-contents)
   - [When Migration Is Needed](#when-migration-is-needed)
   - [Diagnose with Terraform Plan](#diagnose-with-terraform-plan)
@@ -187,4 +194,4 @@ terraform import 'aws_s3_bucket.data["prod"]' data-prod
 
 ---
 
-> Diagnosis - Terraform State Migration v2.0.0 - KemingHe/common-devx
+> Diagnosis - Terraform State Migration v2.0.1 - KemingHe/common-devx

@@ -1,12 +1,21 @@
-# Use Cases - Linux Shell
+# Use Cases - Shell
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-06 by Keming He
 
-Essential shell commands for developer workflows. Platform: Linux, macOS, Unix-like systems.
+## Platform
+
+> [!IMPORTANT]
+>
+> This guide is for **macOS / Linux** users with POSIX-compatible shell (sh, bash, zsh).
+>
+> For **Windows** users: See [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/) or [PowerShell](https://docs.microsoft.com/en-us/powershell/).
+
+Essential shell commands for developer workflows.
 
 ## Table of Contents
 
-- [Use Cases - Linux Shell](#use-cases---linux-shell)
+- [Use Cases - Shell](#use-cases---shell)
+  - [Platform](#platform)
   - [Table of Contents](#table-of-contents)
   - [Search Files and Content](#search-files-and-content)
     - [Find Files](#find-files)
@@ -156,4 +165,4 @@ rmdir empty-dir/                  # Delete empty directory only
 
 ---
 
-> Use Cases - Linux Shell v2.0.0 - KemingHe/common-devx
+> Use Cases - Shell v2.1.0 - KemingHe/common-devx
