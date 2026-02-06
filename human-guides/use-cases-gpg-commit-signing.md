@@ -52,7 +52,7 @@ Sign commits with GPG keys for verified badges on GitHub.
 gpg --list-secret-keys --keyid-format=long
 ```
 
-If you see keys listed, note the key ID (the part after `sec rsa4096/` or similar). If no keys exist, proceed to generate a new one.
+If you see keys listed, note the key ID (see [Get Key ID](#get-key-id) for how to read the output). If no keys exist, proceed to generate a new one.
 
 > [↑ Back to Table of Contents](#table-of-contents)
 
@@ -80,9 +80,17 @@ When prompted:
 
 1. Select **RSA and RSA** (default)
 2. Key size: **4096** bits
-3. Expiration: Choose based on your security needs (0 = no expiration)
+3. Expiration: Choose based on your security needs (recommended: 1-3 years)
 4. Enter your **GitHub email address** as the user ID
 5. Set a secure passphrase
+
+> [!TIP]
+>
+> **Setting an expiration is good practice** - it forces periodic key rotation. When a key expires:
+>
+> - New signatures fail until you extend or replace the key
+> - Old signatures remain valid (GitHub still shows "Verified")
+> - To extend: `gpg --edit-key YOUR_KEY_ID` → `expire` → set new date → `save`
 
 ### Get Key ID
 
@@ -95,12 +103,32 @@ gpg --list-secret-keys --keyid-format=long
 Output looks like:
 
 ```shell
-sec   rsa4096/ABC123DEF456GHI7 2026-02-06 [SC]
-      FINGERPRINT1234567890ABCDEF1234567890ABCDEF
+sec   rsa4096/ABCDEF1234567890 2026-02-06 [SC] [expires: 2029-02-05]
+      1234567890123456789012345678901234567890
 uid                 [ultimate] Your Name <your-email@github.com>
+ssb   rsa4096/FEDCBA0987654321 2026-02-06 [E] [expires: 2029-02-05]
 ```
 
-Your key ID is `ABC123DEF456GHI7` (the part after `rsa4096/`).
+**Output lines explained**:
+
+| Line | Meaning |
+| :--- | :--- |
+| `sec` | **Sec**ret key - your main signing key. `rsa4096` = algorithm and key size. `[SC]` = Sign + Certify capabilities |
+| (indented) | Fingerprint - full 40-character hex identifier |
+| `uid` | **U**ser **ID** - your identity (name + email). `[ultimate]` = you fully trust this key |
+| `ssb` | **S**ecret **s**u**b**key - typically for encryption. `[E]` = Encrypt capability |
+
+**Key identifier types** (for export and signing config):
+
+> [!TIP]
+>
+> **Use long ID or fingerprint** - never short ID. Long ID is readable and sufficient for personal use. Fingerprint is more explicit - prefer it in shared/organizational contexts.
+
+| Type | Length | Example | Where | Collision risk |
+| :--- | :--- | :--- | :--- | :--- |
+| Short ID | 8 hex | `34567890` | Last 8 chars of long ID | High - avoid |
+| Long ID | 16 hex | `ABCDEF1234567890` | After `rsa4096/` on `sec` line | Low |
+| Fingerprint | 40 hex | `1234567890123456789012345678901234567890` | Full line below `sec` | None |
 
 > [↑ Back to Table of Contents](#table-of-contents)
 
@@ -110,8 +138,12 @@ Your key ID is `ABC123DEF456GHI7` (the part after `rsa4096/`).
 
 ### Export Public Key
 
+Use your long ID or fingerprint from [Get Key ID](#get-key-id):
+
 ```shell
-gpg --armor --export YOUR_KEY_ID
+gpg --armor --export ABCDEF1234567890
+# or with fingerprint:
+gpg --armor --export 1234567890123456789012345678901234567890
 ```
 
 Copy the entire output, including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `-----END PGP PUBLIC KEY BLOCK-----`.
@@ -135,8 +167,12 @@ Copy the entire output, including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `--
 
 ### Set Signing Key
 
+Use your long ID or fingerprint from [Get Key ID](#get-key-id):
+
 ```shell
-git config --global user.signingkey YOUR_KEY_ID
+git config --global user.signingkey ABCDEF1234567890
+# or with fingerprint:
+git config --global user.signingkey 1234567890123456789012345678901234567890
 ```
 
 ### Enable Auto-Signing
@@ -210,7 +246,7 @@ error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-Running `gpg --list-secret-keys --keyid-format=long` shows `waiting for lock`.
+Running `gpg --list-secret-keys --keyid-format=long` hangs or shows `waiting for lock`.
 
 **Solution**:
 
