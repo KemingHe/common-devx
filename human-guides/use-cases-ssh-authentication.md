@@ -1,6 +1,6 @@
 # Use Cases - SSH Authentication
 
-> **Last Updated**: 2026-02-06 by Keming He
+> **Last Updated**: 2026-02-16 by Keming He
 
 ## Platform
 
@@ -34,6 +34,7 @@ Authenticate to Git hosting services and remote servers using SSH keys.
   - [Troubleshooting](#troubleshooting)
     - [Permission Denied](#permission-denied)
     - [Agent Issues](#agent-issues)
+    - [Managing Known Hosts](#managing-known-hosts)
 
 ## Why Use SSH Keys?
 
@@ -149,6 +150,10 @@ git clone https://github.com/username/repo.git
 # ...automatically uses SSH authentication
 # (Git rewrites it to git@github.com:username/repo.git)
 ```
+
+> [!NOTE]
+>
+> This rule is applied silently. If you later forget it is set, HTTPS clone URLs will fail with SSH errors like `Permission denied (publickey)`. See [Git guide - URL Rewriting Issues](./use-cases-git.md#url-rewriting-issues) for diagnosis and removal instructions.
 
 ### Test Connection
 
@@ -281,8 +286,31 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 ```
 
+### Managing Known Hosts
+
+The `~/.ssh/known_hosts` file stores fingerprints of SSH servers you have connected to. SSH checks this file to detect man-in-the-middle attacks.
+
+**When to remove a host key**:
+
+- The remote server was rebuilt or its SSH key was rotated (you see a `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED` error).
+- A host key was added unintentionally, for example due to [Git URL rewriting](./use-cases-git.md#url-rewriting-issues) triggering an unexpected SSH connection.
+
+**Remove a host key**:
+
+```shell
+ssh-keygen -R github.com
+```
+
+Replace `github.com` with the hostname you want to remove. The original `known_hosts` file is backed up automatically as `known_hosts.old`.
+
+**View current known hosts**:
+
+```shell
+cat ~/.ssh/known_hosts
+```
+
 > [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
-> Use Cases - SSH Authentication v1.0.0 - KemingHe/common-devx
+> Use Cases - SSH Authentication v1.1.0 - KemingHe/common-devx

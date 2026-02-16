@@ -1,6 +1,6 @@
 # Use Cases - Git
 
-> **Last Updated**: 2026-02-06 by Keming He
+> **Last Updated**: 2026-02-16 by Keming He
 
 ## Platform
 
@@ -38,6 +38,7 @@ Essential git workflows for trunk-based development. Organized by development li
     - [Reset Operations](#reset-operations)
     - [Recovery](#recovery)
     - [File Case Detection](#file-case-detection)
+    - [URL Rewriting Issues](#url-rewriting-issues)
     - [Related Guides](#related-guides)
 
 ## First-Time Setup
@@ -335,12 +336,47 @@ git commit -m "refactor: correct filename casing"
 > [!TIP]
 > Always use `git mv` for case changes. Avoid `git config core.ignorecase false` as it breaks compatibility.
 
+### URL Rewriting Issues
+
+**Symptom**: You clone a repo using an HTTPS URL, but get an SSH error:
+
+```shell
+git clone https://github.com/username/repo.git
+# Cloning into 'repo'...
+# git@github.com: Permission denied (publickey).
+```
+
+**Cause**: A `url.<base>.insteadOf` rule in your Git config is silently rewriting HTTPS URLs to SSH. This is often set intentionally (see [SSH guide - URL Rewriting](./use-cases-ssh-authentication.md#url-rewriting)) but can cause confusion if forgotten.
+
+**Diagnose**:
+
+```shell
+# Check for any URL rewriting rules
+git config --global --list | grep insteadof
+```
+
+If you see output like `url.git@github.com:.insteadof=https://github.com/`, that rule is converting your HTTPS clone URLs to SSH.
+
+**Fix**:
+
+```shell
+# Remove the rewriting rule
+git config --global --unset url."git@github.com:".insteadOf
+```
+
+After removing the rule, HTTPS clone commands will work as expected without requiring SSH key setup.
+
+> [!TIP]
+>
+> If an SSH connection was attempted before you found this issue, your shell may have added a host key to `~/.ssh/known_hosts`. See [SSH guide - Managing Known Hosts](./use-cases-ssh-authentication.md#managing-known-hosts) for cleanup instructions.
+
 ### Related Guides
 
 - [`use-cases-gpg-commit-signing.md`](./use-cases-gpg-commit-signing.md) - GPG signing setup and troubleshooting
+- [`use-cases-ssh-authentication.md`](./use-cases-ssh-authentication.md) - SSH authentication and known hosts management
 
 > [↑ Back to Table of Contents](#table-of-contents)
 
 ---
 
-> Use Cases - Git v2.1.0 - KemingHe/common-devx
+> Use Cases - Git v2.2.0 - KemingHe/common-devx
