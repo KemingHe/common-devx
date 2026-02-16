@@ -360,8 +360,8 @@ If you see output like `url.git@github.com:.insteadof=https://github.com/`, that
 **Fix**:
 
 ```shell
-# Remove the rewriting rule
-git config --global --unset url."git@github.com:".insteadOf
+# Remove all rewriting rules for git@github.com:
+git config --global --unset-all url."git@github.com:".insteadOf
 ```
 
 After removing the rule, HTTPS clone commands will work as expected without requiring SSH key setup.
