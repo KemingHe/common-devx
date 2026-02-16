@@ -1,6 +1,6 @@
 # README - Skill Creation
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-16 by Keming He
 
 Create or refactor Agent Skills following the agentskills.io specification.
 
@@ -16,47 +16,8 @@ Tell your AI agent: "Create a skill for [task]" or "Convert this prompt to a ski
 
 ## Files
 
-```plaintext
-skill-creation/
-├── SKILL.md                    # AI instructions for creating skills
-├── README.md                   # This file
-└── assets/
-    └── skill-template.md       # SKILL.md template with placeholders
-```
-
-## Skill Structure
-
-Every skill follows this structure:
-
-```plaintext
-skill-name/
-├── SKILL.md              # Required: frontmatter + instructions
-├── README.md             # Required: human documentation
-├── assets/               # Optional: templates, static resources
-├── references/           # Optional: detailed docs, acceptance criteria
-└── scripts/              # Optional: executable code
-```
-
-## Frontmatter Requirements
-
-```yaml
----
-name: skill-name          # Must match directory name
-description: |            # What + when + triggers
-  What this skill does.
-  When to use it. Triggers: "keyword".
-license: MIT              # Optional: license reference
-metadata:
-  author: Name
-  version: "1.0.0"
----
-```
-
-## Constraints
-
-- QWERTY keyboard typeable only (no em-dashes, smart quotes, emojis). Exception: `↑` for ToC
-- Keep SKILL.md under 500 lines
-- Directory name must match `name` field in frontmatter
+- [`SKILL.md`](./SKILL.md) - AI instructions for creating skills
+- [`assets/skill-template.md`](./assets/skill-template.md) - SKILL.md template with placeholders
 
 ## Related
 

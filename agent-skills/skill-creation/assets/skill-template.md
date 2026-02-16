@@ -3,7 +3,7 @@ name: [skill-name]
 description: |
   [One-line summary of what this skill does.]
   [When to use it.] Triggers: "[keyword1]", "[keyword2]", "[keyword3]".
-license: MIT
+license: [license]
 metadata:
   author: [AuthorName]
   version: "1.0.0"
