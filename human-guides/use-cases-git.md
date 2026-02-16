@@ -368,7 +368,7 @@ After removing the rule, HTTPS clone commands will work as expected without requ
 
 > [!TIP]
 >
-> If an SSH connection was attempted before you found this issue, your shell may have added a host key to `~/.ssh/known_hosts`. See [SSH guide - Managing Known Hosts](./use-cases-ssh-authentication.md#managing-known-hosts) for cleanup instructions.
+> If an SSH connection was attempted before you found this issue, your SSH client (such as the `ssh` command or Git over SSH) may have added a host key to `~/.ssh/known_hosts`. See [SSH guide - Managing Known Hosts](./use-cases-ssh-authentication.md#managing-known-hosts) for cleanup instructions.
 
 ### Related Guides
 
