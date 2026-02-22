@@ -10,10 +10,10 @@
 
 - [ ] Task in progress (X hr to spend)
 
-## Blockers (Optional)
+## Blockers (optional)
 
 - Issue/blocker description
 
 ---
 
-> Standup Template v2.0.0 - KemingHe/common-devx
+> Standup Template v2.0.1 - KemingHe/common-devx

@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Senior Mentor
@@ -145,7 +145,7 @@ If user says EMERGENCY_ANSWER (all caps with underscore), provide the direct ans
 - Never proactively mention the safe word
 - Hint only after 3+ stuck cycles: "There is an emergency exit if needed"
 
-## Constraints
+## Skill Constraints
 
 - **No direct answers**: Never break except via safe word
 - **One question per turn**: No multi-part questions
@@ -200,4 +200,4 @@ Mentor: "What OSI layer does each operate at?"
 
 ---
 
-> Senior Mentor Skill v1.0.0 - KemingHe/common-devx
+> Senior Mentor Skill v1.1.0 - KemingHe/common-devx

@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Meeting Agenda Generation
@@ -73,16 +73,28 @@ Iterate based on feedback.
 
 Present agenda in markdown code block following discovered template structure.
 
-## Constraints
+## General Doc Constraints
+
+Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
+
+- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
+- **Bullets**: Use dash (`-`) for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line; split into separate distinct bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted.
+- **Prose lines**: One sentence per line; never wrap mid-sentence to a continuation line
+- **Optional sections**: Strip `(optional)` or any parenthetical conditional label (e.g., `(if operational)`) from section headers when populating; omit the entire section (header and body) when unused
+- **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections
+- **Completeness**: Populate all template placeholders with actual content; do not leave bracketed placeholders (e.g., `[Job Title]`), `[TODO]`, or `[TBD]` in generated output
+- **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap
+
+> General Doc Constraints v1.0.0 - KemingHe/common-devx
+
+## Skill Constraints
 
 - **Template as scaffold**: Use discovered templates as minimum structure, enrich appropriately
 - **Time realism**: Allocations should sum to total duration, include buffer
 - **Clear ownership**: Each topic should have a lead
 - **Preparation clarity**: List specific materials, links, or tasks for attendees
 - **Outcome focus**: Define what decisions or deliverables are expected
-- **KISS and DRY**: Each topic conveys unique purpose - no redundant items
-- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode
 
 ---
 
-> Meeting Agenda Generation Skill v1.0.0 - KemingHe/common-devx
+> Meeting Agenda Generation Skill v1.1.0 - KemingHe/common-devx

@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Skill Creation
@@ -115,7 +115,21 @@ When creating a skill, produce three files:
 
 Present each file in a markdown code block with the filename as header.
 
-## Constraints
+## General Doc Constraints
+
+Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
+
+- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
+- **Bullets**: Use dash (`-`) for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line; split into separate distinct bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted.
+- **Prose lines**: One sentence per line; never wrap mid-sentence to a continuation line
+- **Optional sections**: Strip `(optional)` or any parenthetical conditional label (e.g., `(if operational)`) from section headers when populating; omit the entire section (header and body) when unused
+- **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections
+- **Completeness**: Populate all template placeholders with actual content; do not leave bracketed placeholders (e.g., `[Job Title]`), `[TODO]`, or `[TBD]` in generated output
+- **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap
+
+> General Doc Constraints v1.0.0 - KemingHe/common-devx
+
+## Skill Constraints
 
 - **Frontmatter**: Must be valid YAML with `name` and `description`
 - **Name matching**: Directory name must equal `name` field
@@ -123,7 +137,6 @@ Present each file in a markdown code block with the filename as header.
 - **Token budget**: Body should be <5000 tokens for efficient loading
 - **Progressive disclosure**: Only essential instructions in SKILL.md; details in assets/references
 - **Asset resolution**: Always instruct to check local `./assets/` first, then search
-- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
 
 ## Specification Reference
 
@@ -150,4 +163,4 @@ Full specification: [agentskills.io/specification](https://agentskills.io/specif
 
 ---
 
-> Skill Creation Skill v1.2.0 - KemingHe/common-devx
+> Skill Creation Skill v1.3.0 - KemingHe/common-devx
