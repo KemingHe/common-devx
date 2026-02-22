@@ -1,6 +1,6 @@
 # README - Documentation Review
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-22 by Keming He
 
 Review and correct documentation for consistency, correctness, and drift. Documentation edits only - no functional code changes.
 
@@ -21,6 +21,7 @@ Ask your AI agent to review documentation:
 | Completeness | Required sections, no placeholders |
 | Freshness | Last Updated dates, versions |
 | Linter | IDE/editor warnings when available |
+| Output quality | Soft-wrapped lines, orphaned optional labels, unfilled placeholders |
 
 ## Common Catches
 

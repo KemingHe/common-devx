@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "3.0.0"
+  version: "3.1.0"
 ---
 
 # GitHub Pull Request Generation
@@ -116,16 +116,28 @@ type(scope): brief description
 [complete PR description following template structure]
 ```
 
-## Constraints
+## General Doc Constraints
+
+Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
+
+- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
+- **Bullets**: Use dash (`-`) for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line; split into separate distinct bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted.
+- **Prose lines**: One sentence per line; never wrap mid-sentence to a continuation line
+- **Optional sections**: Strip `(optional)` or any parenthetical conditional label (e.g., `(if operational)`) from section headers when populating; omit the entire section (header and body) when unused
+- **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections
+- **Completeness**: Populate all template placeholders with actual content; do not leave bracketed placeholders (e.g., `[Job Title]`), `[TODO]`, or `[TBD]` in generated output
+- **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap
+
+> General Doc Constraints v1.0.0 - KemingHe/common-devx
+
+## Skill Constraints
 
 - **Title**: Max 50 characters, imperative mood, conventional commit format
 - **Template as scaffold**: Use discovered templates as minimum structure, enrich appropriately
 - **Comprehensive analysis**: Use git commands, MCP tools, codebase search
-- **KISS and DRY**: Each bullet provides unique, concise information - no fluff
 - **Business context**: Connect technical changes to business value
 - **Issue linking**: Use separate "closes #X" for each resolved issue
-- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode
 
 ---
 
-> GitHub Pull Request Generation Skill v3.0.0 - KemingHe/common-devx
+> GitHub Pull Request Generation Skill v3.1.0 - KemingHe/common-devx

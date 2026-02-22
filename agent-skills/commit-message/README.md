@@ -1,6 +1,6 @@
 # README - Commit Message Generation
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-22 by Keming He
 
 Generate conventional commit messages by analyzing staged changes and repository context.
 
@@ -35,7 +35,7 @@ commit-message/
 | `refactor` | Code change, no feature/fix |
 | `chore` | Maintenance, dependencies |
 
-## Constraints
+## Skill Constraints
 
 - Title max 50 characters, imperative mood
 - QWERTY keyboard typeable only (no em-dashes, smart quotes, emojis)
