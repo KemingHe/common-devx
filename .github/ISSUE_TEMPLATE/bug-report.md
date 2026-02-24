@@ -6,23 +6,27 @@ labels: 'bug'
 
 ---
 
-### Related (optional)
+## Related (optional)
 
 - #[issue/PR number]: [brief description]
 - [external link]: [brief description]
 
-### What Happened?
+## What Happened?
 
-Expected: [What should happen]
+### Expected
 
-Actual: [What actually happened]
+[What should happen]
 
-### Steps to Reproduce
+### Actual
+
+[What actually happened]
+
+## Steps to Reproduce
 
 1. [First step]
 2. [Step where error occurs]
 
-### Environment (optional)
+## Environment (optional)
 
 - OS: [e.g. macOS 14.0]
 - Browser: [e.g. Chrome 120]
