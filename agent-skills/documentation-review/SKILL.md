@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Documentation Review
@@ -40,9 +40,10 @@ Determine files to review:
 | **Correctness** | Valid YAML/markdown, working links, accurate paths |
 | **Completeness** | Required sections present, no unfilled placeholders |
 | **Freshness** | Last Updated date, version numbers, changelog entries |
-| **Characters** | QWERTY-only, no em-dashes/smart quotes/emojis (exception: `↑`) |
+| **Characters** | QWERTY-only; no em-dashes, em-dash substitutes (`--`, ` -- `), smart quotes, emojis, or special Unicode (exception: `↑`) |
+| **Inline formatting** | `_underscore_` italics only; colon outside bold label markers (`**Topic**:`) |
 | **Linter** | Check IDE/editor linter errors when available |
-| **Output quality** | Soft-wrapped bullets or prose continuation lines; orphaned conditional section labels (e.g., `(optional)` still present after populating); non-QWERTY characters; unfilled bracketed placeholders; terminology inconsistency; KISS/DRY violations |
+| **Output quality** | Soft-wrapped bullets or prose; sentences broken across hard newlines; orphaned `(optional)` labels in populated sections; unfilled `[placeholder]` text; terminology inconsistency; KISS/DRY violations |
 
 ### Step 3: Check Linter Errors
 
@@ -87,15 +88,15 @@ Summarize with:
 
 Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
 
-- **Characters**: QWERTY keyboard typeable only - no em-dashes, smart quotes, emojis, or special Unicode. Exception: `↑` for ToC navigation
-- **Bullets**: Use dash (`-`) for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line; split into separate distinct bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted.
-- **Prose lines**: One sentence per line; never wrap mid-sentence to a continuation line
-- **Optional sections**: Strip `(optional)` or any parenthetical conditional label (e.g., `(if operational)`) from section headers when populating; omit the entire section (header and body) when unused
-- **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections
-- **Completeness**: Populate all template placeholders with actual content; do not leave bracketed placeholders (e.g., `[Job Title]`), `[TODO]`, or `[TBD]` in generated output
-- **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap
+- **Characters**: QWERTY keyboard typeable only - no em-dashes, em-dash substitutes (`--`, ` -- `), smart quotes, emojis, or special Unicode. Use ` - ` (space-dash-space) for clause separation. Exception: `↑` for ToC navigation.
+- **Inline formatting**: Use `_underscore_` for italics, not `*single-star*`. Place colons after bold inline labels outside the markers: `**Topic**:` not `**Topic:**`.
+- **Bullets**: Use `-` for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line - split into separate bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted. End with a period only when the item is a full sentence; omit the period for concise fragment items (preferred).
+- **Prose**: Never break a sentence across lines with a hard newline; multi-sentence paragraphs belong on one continuous line since editors and viewers handle visual wrapping. Exception: commit message bodies use one sentence per line for `git log` readability.
+- **Template hygiene**: Delete `(optional)` and any parenthetical conditional label (e.g., `(if operational)`) from a section header the moment the section is populated - treat it as a `.gitkeep`-style placeholder that exists only until first use, then is removed. Omit the entire section (header and body) when unused. Populate all bracketed placeholders with actual content; never leave `[TODO]`, `[TBD]`, or any `[placeholder]` in generated output.
+- **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections.
+- **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap.
 
-> General Doc Constraints v1.0.0 - KemingHe/common-devx
+> General Doc Constraints v1.1.0 - KemingHe/common-devx
 
 ## Skill Constraints
 
@@ -106,4 +107,4 @@ Apply to all generated output. If a discovered template deviates from any rule (
 
 ---
 
-> Documentation Review Skill v1.2.0 - KemingHe/common-devx
+> Documentation Review Skill v1.3.0 - KemingHe/common-devx

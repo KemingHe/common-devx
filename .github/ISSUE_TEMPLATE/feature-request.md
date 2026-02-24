@@ -6,19 +6,19 @@ labels: 'enhancement'
 
 ---
 
-### Related (optional)
+## Related (optional)
 
 - #[issue/PR number]: [brief description]
 - [external link]: [brief description]
 
-### Problem
+## Problem
 
 [What limitation or pain point does this address?]
 
-### Proposed Solution
+## Proposed Solution
 
 [What should be built? How should it work?]
 
-### Alternatives Considered (optional)
+## Alternatives Considered (optional)
 
 [Other approaches evaluated and why this solution is preferred]
