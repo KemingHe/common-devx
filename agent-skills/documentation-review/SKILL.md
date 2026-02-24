@@ -40,7 +40,7 @@ Determine files to review:
 | **Correctness** | Valid YAML/markdown, working links, accurate paths |
 | **Completeness** | Required sections present, no unfilled placeholders |
 | **Freshness** | Last Updated date, version numbers, changelog entries |
-| **Characters** | QWERTY-only; no em-dashes, em-dash substitutes (`--`, ` -- `), smart quotes, emojis, or special Unicode (exception: `↑`) |
+| **Characters** | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or em-dash substitutes (`--`, ` -- `) in prose; use ` - ` for clause separation (exception: `↑`) |
 | **Inline formatting** | `_underscore_` italics only; colon outside bold label markers (`**Topic**:`) |
 | **Linter** | Check IDE/editor linter errors when available |
 | **Output quality** | Soft-wrapped bullets or prose; sentences broken across hard newlines; orphaned `(optional)` labels in populated sections; unfilled `[placeholder]` text; terminology inconsistency; KISS/DRY violations |
@@ -88,7 +88,7 @@ Summarize with:
 
 Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
 
-- **Characters**: QWERTY keyboard typeable only - no em-dashes, em-dash substitutes (`--`, ` -- `), smart quotes, emojis, or special Unicode. Use ` - ` (space-dash-space) for clause separation. Exception: `↑` for ToC navigation.
+- **Characters**: QWERTY keyboard typeable only - no smart quotes, emojis, or special Unicode anywhere. In prose, do not use em-dashes or em-dash substitutes (`--`, ` -- `); use ` - ` (space-dash-space) for clause separation instead. Exception: `↑` for ToC navigation.
 - **Inline formatting**: Use `_underscore_` for italics, not `*single-star*`. Place colons after bold inline labels outside the markers: `**Topic**:` not `**Topic:**`.
 - **Bullets**: Use `-` for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line - split into separate bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted. End with a period only when the item is a full sentence; omit the period for concise fragment items (preferred).
 - **Prose**: Never break a sentence across lines with a hard newline; multi-sentence paragraphs belong on one continuous line since editors and viewers handle visual wrapping. Exception: commit message bodies use one sentence per line for `git log` readability.
