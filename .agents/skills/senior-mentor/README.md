@@ -52,7 +52,3 @@ Use sparingly - the learning happens in the journey.
 
 - [`skill-creation/README.md`](../skill-creation/README.md) - How skills are structured
 - [`agent-skills/README.md`](../README.md) - Skill catalog
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

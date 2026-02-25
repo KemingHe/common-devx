@@ -30,7 +30,3 @@
 - [Specific decisions to be made]
 - [Deliverables expected]
 - [Goals for the meeting]
-
----
-
-> Meeting Agenda Template v2.0.0 - KemingHe/common-devx

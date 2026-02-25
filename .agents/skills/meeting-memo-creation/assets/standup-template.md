@@ -13,7 +13,3 @@
 ## Blockers (optional)
 
 - Issue/blocker description
-
----
-
-> Standup Template v2.0.1 - KemingHe/common-devx

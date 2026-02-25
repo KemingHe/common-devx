@@ -160,7 +160,3 @@ Full specification: [agentskills.io/specification](https://agentskills.io/specif
 | `assets/` | Templates, images, data files, static resources | Skill produces output based on templates |
 | `references/` | Detailed docs, acceptance criteria, domain-specific files | SKILL.md exceeds 500 lines or needs test criteria |
 | `scripts/` | Executable code (Python, Bash, JavaScript) | Skill needs to run code for reliable execution |
-
----
-
-> Skill Creation Skill v1.4.0 - KemingHe/common-devx

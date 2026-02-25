@@ -77,7 +77,3 @@ If you discover a security issue:
 1. Report privately (see above)
 2. Allow reasonable time for response and fix
 3. Do not disclose publicly until addressed
-
----
-
-> Security Policy v1.1.0 - KemingHe/common-devx

@@ -26,7 +26,3 @@ This document provides essential contact information for the [project/team name]
 - **Notes**:
   - [Important scheduling or communication notes]
   - [Additional context or preferences]
-
----
-
-> Contacts Template v2.0.0 - KemingHe/common-devx

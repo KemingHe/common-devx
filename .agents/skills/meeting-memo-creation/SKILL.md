@@ -101,7 +101,3 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Attribution**: Attribute credibility-dependent info, skip for established facts
 - **Action clarity**: Include ownership and deadlines when specified
 - **Characters exception**: `memo-template.md` uses 🔴🟠🟡🟢 as functional priority indicators in the ACTION ITEMS table - these are permitted per template
-
----
-
-> Meeting Memo Generation Skill v3.2.0 - KemingHe/common-devx

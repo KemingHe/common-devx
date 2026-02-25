@@ -109,7 +109,3 @@ Link to the approved issue. Use the [PR template](./.github/pull_request_templat
 ## Questions
 
 Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues).
-
----
-
-> Contributing Guide v2.2.0 - KemingHe/common-devx

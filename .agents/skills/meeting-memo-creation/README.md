@@ -36,7 +36,3 @@ meeting-memo/
 
 - [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Generate meeting agendas
 - [`contacts/README.md`](../contacts/README.md) - Manage contact information
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

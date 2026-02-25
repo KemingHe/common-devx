@@ -18,7 +18,3 @@ CHANGES
 - No breaking changes
 - No issues to close
 - Self-explanatory modifications
-
----
-
-> Commit Template Short v2.0.0 - KemingHe/common-devx

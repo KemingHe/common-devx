@@ -51,7 +51,3 @@
 | :--- | :--- |
 | [Acronym/Term] | [Full meaning and context] |
 | [Acronym/Term] | [Full meaning and context] |
-
----
-
-> Meeting Memo Template v2.0.0 - KemingHe/common-devx

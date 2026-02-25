@@ -197,7 +197,3 @@ Mentor: "AWS certification prep. When would you choose ALB over NLB?"
 User: "ALB is for HTTP traffic?"
 Mentor: "What OSI layer does each operate at?"
 ```
-
----
-
-> Senior Mentor Skill v1.1.0 - KemingHe/common-devx

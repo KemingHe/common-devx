@@ -104,7 +104,3 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Structured output**: Always use table format for findings
 - **Prioritized**: Critical issues (broken links, wrong versions) before style issues
 - **Linter-aware**: Check and report linter errors when tooling is available
-
----
-
-> Documentation Review Skill v1.3.0 - KemingHe/common-devx

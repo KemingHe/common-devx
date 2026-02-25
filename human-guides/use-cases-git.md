@@ -376,7 +376,3 @@ After removing the rule, HTTPS clone commands will work as expected without requ
 - [`use-cases-ssh-authentication.md`](./use-cases-ssh-authentication.md) - SSH authentication and known hosts management
 
 > [↑ Back to Table of Contents](#table-of-contents)
-
----
-
-> Use Cases - Git v2.2.0 - KemingHe/common-devx

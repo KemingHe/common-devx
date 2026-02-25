@@ -125,7 +125,3 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Duplicate check**: Search existing contacts before adding new entry
 - **User confirmation**: Always confirm before writing changes
 - **Privacy awareness**: Only include information user has permission to store
-
----
-
-> Contact Management Skill v1.2.0 - KemingHe/common-devx

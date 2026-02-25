@@ -41,7 +41,3 @@ Ask your AI agent to review documentation:
 
 - [`skill-creation/README.md`](../skill-creation/README.md) - How to create new skills
 - [`commit-message/README.md`](../commit-message/README.md) - Generate commit messages
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

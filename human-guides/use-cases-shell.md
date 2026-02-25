@@ -162,7 +162,3 @@ rmdir empty-dir/                  # Delete empty directory only
 ```
 
 > [↑ Back to Table of Contents](#table-of-contents)
-
----
-
-> Use Cases - Shell v2.1.0 - KemingHe/common-devx

@@ -35,7 +35,3 @@ For detailed workflows, see [`[workflow-guide.md]`](./path/to/guide.md).
 
 - [`[doc.md]`](./path/to/doc.md) - [What it covers]
 - [External Resource](https://url.com) - [When to use it]
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

@@ -173,7 +173,3 @@ CHANGES
 BREAKING CHANGES
 - UserService.getData() now returns Promise<UserData>
 ```
-
----
-
-> Commit Message Generation Skill v2.2.0 - KemingHe/common-devx

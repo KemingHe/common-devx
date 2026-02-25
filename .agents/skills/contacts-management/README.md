@@ -43,7 +43,3 @@ contacts/
 
 - [`meeting-memo/README.md`](../meeting-memo/README.md) - Reference contacts in meeting docs
 - [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Include attendee info in agendas
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

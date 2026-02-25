@@ -58,7 +58,3 @@ CHANGES
 - Collapse trivial changes into single bullets
 - Expand complex changes with context
 - Ask user if grouping is unclear or if emphasis needed
-
----
-
-> Commit Template Long v2.0.0 - KemingHe/common-devx

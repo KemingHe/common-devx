@@ -310,7 +310,3 @@ cat ~/.ssh/known_hosts
 ```
 
 > [↑ Back to Table of Contents](#table-of-contents)
-
----
-
-> Use Cases - SSH Authentication v1.1.0 - KemingHe/common-devx

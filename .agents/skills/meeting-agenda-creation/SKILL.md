@@ -94,7 +94,3 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Clear ownership**: Each topic should have a lead
 - **Preparation clarity**: List specific materials, links, or tasks for attendees
 - **Outcome focus**: Define what decisions or deliverables are expected
-
----
-
-> Meeting Agenda Generation Skill v1.2.0 - KemingHe/common-devx

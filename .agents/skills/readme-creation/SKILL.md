@@ -141,7 +141,3 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Non-recursive**: Document THIS level only, link to subdirectory READMEs
 - **Pattern over listing**: Consider documenting naming patterns for large directories
 - **Link to README.md**: Use `[Dir](../dir/README.md)` not `../dir/`
-
----
-
-> README Generation Skill v2.3.0 - KemingHe/common-devx

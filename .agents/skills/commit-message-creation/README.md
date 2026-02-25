@@ -45,7 +45,3 @@ commit-message/
 
 - [`skill-creation/README.md`](../skill-creation/README.md) - How skills are structured
 - [`CONTRIBUTING.md`](../../CONTRIBUTING.md) - Project git conventions
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

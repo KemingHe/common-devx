@@ -270,7 +270,3 @@ echo "test" | gpg --clearsign                 # Should sign successfully
 If the issue persists and you need to commit urgently, see [Skip Signing](#skip-signing).
 
 > [↑ Back to Table of Contents](#table-of-contents)
-
----
-
-> Use Cases - GPG Commit Signing v1.0.1 - KemingHe/common-devx

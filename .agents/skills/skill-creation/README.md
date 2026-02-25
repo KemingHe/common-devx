@@ -23,7 +23,3 @@ Tell your AI agent: "Create a skill for [task]" or "Convert this prompt to a ski
 
 - [agentskills.io/specification](https://agentskills.io/specification) - Official specification
 - [`agent-skills/README.md`](../README.md) - Skill catalog
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

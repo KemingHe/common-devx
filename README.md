@@ -61,7 +61,3 @@ common-devx/
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) - How to contribute
 - [`SECURITY.md`](./SECURITY.md) - Security guidance
 - [GitHub Issues](https://github.com/KemingHe/common-devx/issues) - Questions and requests
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx

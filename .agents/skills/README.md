@@ -55,7 +55,3 @@ See [`skill-creation/README.md`](./skill-creation/README.md) for the full proces
 ## References
 
 - [agentskills.io Specification](https://agentskills.io/specification) - Official standard
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx
