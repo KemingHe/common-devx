@@ -8,7 +8,7 @@ Review and correct documentation for consistency, correctness, and drift. Docume
 
 Ask your AI agent to review documentation:
 
-- "Review the docs in agent-skills/"
+- "Review the docs in .agents/skills/"
 - "Check this README for issues"
 - "Audit documentation before commit"
 
