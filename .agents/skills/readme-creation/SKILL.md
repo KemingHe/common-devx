@@ -2,8 +2,8 @@
 name: readme-creation
 description: |
   Generate self-contained README files that enable instant developer onboarding.
-  Use when creating or updating directory documentation.
-  Triggers: "create readme", "readme", "document directory", "write readme".
+  Use when creating or updating directory or root repository documentation.
+  Triggers: "create readme", "readme", "document directory", "write readme", "root readme".
 license: MIT
 metadata:
   author: KemingHe
@@ -92,10 +92,32 @@ tree -L 1 --dirsfirst          # Directories first, 1 level
 
 ### Step 1: Understand Context
 
-- Read root README.md and parent README.md (if nested)
 - Use `tree` or list files at THIS level only (non-recursive)
 - Identify: What problem does this directory solve?
 - Look for naming patterns in files/subdirectories
+- **Detect if this is a root README**: Check if the target directory contains a `.git/` directory or is the repository root
+- If root README detected, follow the Root README Mode below before proceeding to Step 2
+- If subdirectory README, read root README.md and parent README.md for context
+
+### Root README Mode
+
+Root READMEs are a special case requiring additional context gathering. Auto-detect the following, then **always confirm with the user** before generating:
+
+**Repo visibility**:
+
+- Check for LICENSE, CONTRIBUTING.md, SECURITY.md at project root
+- If all three exist, likely a public repo - ask user to confirm
+- If missing, likely a private repo - ask user to confirm
+- Public repos: Include References to LICENSE, CONTRIBUTING.md, SECURITY.md if they exist; suggest creating them if missing
+- Private repos: Skip license/contributing/security sections; ask about internal docs, wikis, or team-specific resources
+
+**Platform detection**:
+
+- Check for `.github/` directory at project root - indicates GitHub
+- Check for `.gitlab/` directory at project root - indicates GitLab
+- If both or neither, ask user which platform
+- GitHub repos: Reference GitHub Issues for questions/support
+- GitLab repos: Reference GitLab Issues for questions/support
 
 ### Step 2: Write with 30-Second Test in Mind
 
@@ -106,7 +128,7 @@ Structure for scannability:
 3. **Directory structure or patterns** - what's here (this level only)
 4. **Quick links** - where to go next
 5. **Prerequisites/Getting Started** - how to use (if operational)
-6. **References** - additional context
+6. **References** - additional context (root READMEs: adjust per visibility and platform)
 
 ### Step 3: Validate Self-Containment
 
@@ -115,6 +137,7 @@ Ask: "If a dev lands here with zero context, do they understand in 30 seconds?"
 - Purpose clear without reading parent?
 - No broken assumptions about prior knowledge?
 - Links provide escape hatches to details?
+- Root READMEs: Does the References section match the repo's actual visibility and platform?
 
 ## Output Format
 
@@ -141,3 +164,4 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Non-recursive**: Document THIS level only, link to subdirectory READMEs
 - **Pattern over listing**: Consider documenting naming patterns for large directories
 - **Link to README.md**: Use `[Dir](../dir/README.md)` not `../dir/`
+- **Root README mode**: Always confirm repo visibility (public/private) and platform (GitHub/GitLab) with user before generating a root README
