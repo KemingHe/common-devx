@@ -191,7 +191,3 @@ terraform import 'aws_s3_bucket.data["prod"]' data-prod
 - [Refactoring with moved blocks](https://developer.hashicorp.com/terraform/language/modules/develop/refactoring)
 - [`terraform state mv`](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
 - [`terraform import`](https://developer.hashicorp.com/terraform/cli/commands/import)
-
----
-
-> Diagnosis - Terraform State Migration v2.0.1 - KemingHe/common-devx

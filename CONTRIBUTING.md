@@ -1,6 +1,6 @@
 # Contributing
 
-> **Last Updated**: 2026-02-06 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
 How to contribute to `common-devx` - adding skills, guides, and templates.
 
@@ -41,9 +41,10 @@ This repository uses **trunk-based development**:
 
 | Type | Location | Guide |
 | :--- | :--- | :--- |
-| Agent skills | `agent-skills/[skill-name]/` | [`skill-creation/README.md`](./agent-skills/skill-creation/README.md) |
+| Agent skills | `.agents/skills/[skill-name]/` | [`skill-creation/README.md`](./.agents/skills/skill-creation/README.md) |
 | Human guides | `human-guides/` | `[type]-[tech-and-description].md` pattern |
 | GitHub templates | `.github/` | Edit directly |
+| GitLab templates | `.gitlab/` | Edit directly, or use `dot-gitlab-sync` skill |
 
 ## Workflow
 
@@ -81,7 +82,7 @@ Before submitting:
 - [ ] You can explain every change
 - [ ] Follows existing patterns
 - [ ] No `[TODO]` or `[TBD]` placeholders
-- [ ] Links work, versions match (frontmatter = footer)
+- [ ] Links work, frontmatter versions are correct
 - [ ] Last Updated date is current
 
 ### 6. Submit PR
@@ -103,13 +104,9 @@ Link to the approved issue. Use the [PR template](./.github/pull_request_templat
 
 **Files**:
 
-- Skills: `agent-skills/[skill-name]/SKILL.md`
+- Skills: `.agents/skills/[skill-name]/SKILL.md`
 - Guides: `human-guides/[type]-[tech-and-description].md`
 
 ## Questions
 
 Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues).
-
----
-
-> Contributing Guide v2.2.0 - KemingHe/common-devx

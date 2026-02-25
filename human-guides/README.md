@@ -41,9 +41,5 @@ New types welcome - use descriptive prefixes that categorize the content.
 
 ## References
 
-- [`agent-skills/README.md`](../agent-skills/README.md) - AI-assisted documentation skills
+- [`.agents/skills/README.md`](../.agents/skills/README.md) - AI-assisted documentation skills
 - [`CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx
