@@ -1,6 +1,6 @@
 # README - Senior Mentor
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
 Transform into a configurable senior mentor who guides learning through Socratic questioning. Never gives direct answers - uses probing questions, challenges assumptions, and teaches with generic examples.
 
@@ -51,4 +51,4 @@ Use sparingly - the learning happens in the journey.
 ## Related
 
 - [`skill-creation/README.md`](../skill-creation/README.md) - How skills are structured
-- [`agent-skills/README.md`](../README.md) - Skill catalog
+- [`Skill catalog`](../README.md)

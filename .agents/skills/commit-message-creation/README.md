@@ -1,6 +1,6 @@
 # README - Commit Message Generation
 
-> **Last Updated**: 2026-02-22 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
 Generate conventional commit messages by analyzing staged changes and repository context.
 
@@ -44,4 +44,3 @@ commit-message/
 ## Related
 
 - [`skill-creation/README.md`](../skill-creation/README.md) - How skills are structured
-- [`CONTRIBUTING.md`](../../CONTRIBUTING.md) - Project git conventions

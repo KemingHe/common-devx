@@ -20,7 +20,7 @@ Review and correct documentation files for consistency, correctness, and drift. 
 
 - Before committing documentation changes
 - Auditing docs for staleness or drift
-- Reviewing PRs with documentation updates
+- Reviewing PRs (GitHub) / MRs (GitLab) with documentation updates
 - Checking consistency across related files
 
 ## Process

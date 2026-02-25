@@ -1,6 +1,6 @@
 # README - Contact Management
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
 Manage contact information by adding, updating, or validating entries from various sources.
 
@@ -41,5 +41,5 @@ contacts/
 
 ## Related
 
-- [`meeting-memo/README.md`](../meeting-memo/README.md) - Reference contacts in meeting docs
-- [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Include attendee info in agendas
+- [`meeting-memo-creation/README.md`](../meeting-memo-creation/README.md) - Reference contacts in meeting docs
+- [`meeting-agenda-creation/README.md`](../meeting-agenda-creation/README.md) - Include attendee info in agendas

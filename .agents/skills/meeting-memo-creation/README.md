@@ -1,6 +1,6 @@
 # README - Meeting Memo Generation
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
 Generate meeting memos that capture decisions, actions, and key discussions following project templates.
 
@@ -34,5 +34,5 @@ meeting-memo/
 
 ## Related
 
-- [`meeting-agenda/README.md`](../meeting-agenda/README.md) - Generate meeting agendas
-- [`contacts/README.md`](../contacts/README.md) - Manage contact information
+- [`meeting-agenda-creation/README.md`](../meeting-agenda-creation/README.md) - Generate meeting agendas
+- [`contacts-management/README.md`](../contacts-management/README.md) - Manage contact information

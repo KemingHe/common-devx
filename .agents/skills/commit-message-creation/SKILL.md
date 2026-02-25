@@ -47,7 +47,7 @@ git branch -a | cat               # All branches
 
 **Forbidden operations**: Never use git commit, push, pull, merge, rebase, add, reset, clean, or stash.
 
-**Prefer remote tools**: Use GitHub/GitLab MCP tools when available for issues, PRs, and branch analysis.
+**Prefer remote tools**: Use GitHub/GitLab MCP tools when available for issues, PRs (GitHub) / MRs (GitLab), and branch analysis.
 
 ## Process
 
@@ -72,7 +72,7 @@ Identify:
 - Affected components and scope
 - Type of change (feat, fix, docs, etc.)
 - Patterns from recent commits
-- Related issues or PRs
+- Related issues or PRs (GitHub) / MRs (GitLab)
 
 ### Step 2: Classify and Generate Title
 
