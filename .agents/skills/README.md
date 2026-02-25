@@ -24,6 +24,7 @@ Each skill follows a consistent structure:
 | [`commit-message-creation/`](./commit-message-creation/README.md) | Generate conventional commit messages |
 | [`contacts-management/`](./contacts-management/README.md) | Extract and organize contact information |
 | [`documentation-review/`](./documentation-review/README.md) | Review documentation for quality and consistency |
+| [`dot-gitlab-sync/`](./dot-gitlab-sync/README.md) | Sync .github/ and .gitlab/ template directories |
 | [`issue-creation/`](./issue-creation/README.md) | Generate issues following repository templates (GitHub and GitLab) |
 | [`meeting-agenda-creation/`](./meeting-agenda-creation/README.md) | Generate structured meeting agendas |
 | [`meeting-memo-creation/`](./meeting-memo-creation/README.md) | Generate meeting memos and standup summaries |
