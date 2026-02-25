@@ -1,8 +1,8 @@
-# README - GitHub Issue Generation
+# README - Issue Generation
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
-Generate GitHub issues following repository templates for bug reports, feature requests, and enhancements.
+Generate issues following repository templates for bug reports, feature requests, and enhancements. Supports both GitHub and GitLab with automatic platform detection.
 
 ## Quick Start
 
@@ -14,13 +14,14 @@ Use this skill when you need to:
 
 Tell your AI agent: "Create a bug report for [problem]" or "Write a feature request for [functionality]".
 
-## Template Discovery
+## Platform Support
 
-This skill searches for templates in order:
+The skill auto-detects the platform by checking for `.github/` or `.gitlab/` directories at project root.
 
-1. `.github/ISSUE_TEMPLATE/` (`bug-report.md`, `feature-request.md`)
-2. Repository-wide search for ISSUE_TEMPLATE
-3. Falls back to minimal structure if none found
+| Platform | Template Location | Frontmatter |
+| :--- | :--- | :--- |
+| GitHub | `.github/ISSUE_TEMPLATE/` | YAML frontmatter required |
+| GitLab | `.gitlab/issue_templates/` | No frontmatter |
 
 ## Issue Types
 
@@ -35,9 +36,5 @@ This skill searches for templates in order:
 
 ## Related
 
-- [`github-pull-request/README.md`](../github-pull-request/README.md) - Generate PR descriptions
-- [`.github/ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/) - Repository issue templates
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx
+- [`pull-merge-request-creation/`](../pull-merge-request-creation/README.md) - Generate PR/MR descriptions
+- [`commit-message-creation/`](../commit-message-creation/README.md) - Generate commit messages

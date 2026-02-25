@@ -1,18 +1,18 @@
 ---
 name: issue-creation
 description: |
-  Generate GitHub issues following repository templates.
+  Generate issues following repository templates for GitHub or GitLab.
   Use when creating bug reports, feature requests, or other issues.
-  Triggers: "create issue", "bug report", "feature request", "github issue".
+  Triggers: "create issue", "bug report", "feature request", "new issue".
 license: MIT
 metadata:
   author: KemingHe
   version: "4.0.0"
 ---
 
-# GitHub Issue Generation
+# Issue Generation
 
-Generate GitHub issues that communicate problems, feature requests, and enhancements following repository templates.
+Generate issues that communicate problems, feature requests, and enhancements following repository templates.
 
 **Temporary persona**: Senior engineering manager with expertise in issue tracking and project communication.
 
@@ -23,21 +23,41 @@ Generate GitHub issues that communicate problems, feature requests, and enhancem
 - Documenting technical debt or improvements
 - Creating issues that follow repository conventions
 
+## Platform Detection
+
+Determine whether the project uses GitHub or GitLab:
+
+1. Check for `.github/` directory at project root - indicates GitHub
+2. Check for `.gitlab/` directory at project root - indicates GitLab
+3. If both directories exist, ask user which platform to target
+4. If neither directory exists, ask user which platform to target
+
 ## Template Resolution
+
+### GitHub
 
 1. Search `.github/ISSUE_TEMPLATE/` for `bug-report.md`, `feature-request.md`, or other templates
 2. Check `.github/ISSUE_TEMPLATE/config.yml` for template configuration
 3. If not found, search `**/ISSUE_TEMPLATE/**` across repository
 4. If still not found, ask user for template or use minimal structure
 
+### GitLab
+
+1. Search `.gitlab/issue_templates/` for `bug-report.md`, `feature-request.md`, or other templates
+2. If not found, search `**/issue_templates/**` across repository
+3. If still not found, ask user for template or use minimal structure
+
+**Note**: GitHub issue templates use YAML frontmatter (`name`, `about`, `title`, `labels`); GitLab issue templates do not include frontmatter.
+
 ## Process
 
 ### Step 1: Gather Information
 
-- Search for issue templates in repository
+- Detect platform (GitHub or GitLab) using Platform Detection above
+- Search for issue templates in repository using the platform-specific Template Resolution
 - Classify issue type from user input (bug vs feature vs other)
 - Use MCP tools for context:
-  - Search existing issues, PRs, discussions for related work
+  - Search existing issues, PRs (GitHub) / MRs (GitLab), discussions for related work
   - Search codebase for recent changes, error patterns
   - Identify dependencies or blockers from prior work
 - Extract key information: symptoms, desired functionality, technical requirements
@@ -55,13 +75,13 @@ Present template selection and ask:
 
 - Bug: Reproduction steps, expected/actual behavior, environment?
 - Feature: Problem statement, proposed solution, alternatives?
-- All: Related issues/PRs, priority level?
+- All: Related issues/PRs (GitHub) / MRs (GitLab), priority level?
 
 ### Step 3: Generate Issue
 
 - Use template as minimum structure, enrich with critical details
 - Include conventional title format
-- Populate Related section with discovered issues/PRs (omit if none)
+- Populate Related section with discovered issues/PRs (GitHub) / MRs (GitLab) (omit if none)
 - Add context that helps maintainers: error logs, affected files, user impact
 - Use dash bullets, each with specific actionable details
 - Apply KISS and DRY: no fluff, but capture all information needed to act
@@ -70,7 +90,7 @@ Present template selection and ask:
 
 - Bug: Include actual error messages, stack traces, affected code paths
 - Feature: Clarify scope boundaries, success criteria, edge cases
-- Both: Link related issues/PRs, note blocking dependencies
+- Both: Link related issues/PRs (GitHub) / MRs (GitLab), note blocking dependencies
 
 ## Output Format
 
@@ -103,7 +123,4 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Title**: Max 50 characters, imperative mood, `bug(scope):` or `feat(scope):` format
 - **Template as scaffold**: Use discovered templates as minimum structure, enrich appropriately
 - **Completeness**: Capture all technical details, error messages, requirements
-
----
-
-> GitHub Issue Generation Skill v3.2.0 - KemingHe/common-devx
+- **Platform awareness**: Use detected platform terminology consistently throughout the generated issue

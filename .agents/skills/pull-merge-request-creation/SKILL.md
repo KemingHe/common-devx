@@ -1,33 +1,52 @@
 ---
 name: pull-merge-request-creation
 description: |
-  Generate GitHub pull request descriptions following repository templates.
-  Use when creating PRs to communicate changes, impact, and value.
-  Triggers: "create pr", "pull request", "pr description", "github pr".
+  Generate pull request (GitHub) or merge request (GitLab) descriptions following repository templates.
+  Use when creating PRs/MRs to communicate changes, impact, and value.
+  Triggers: "create pr", "create mr", "pull request", "merge request", "pr description", "mr description".
 license: MIT
 metadata:
   author: KemingHe
   version: "4.0.0"
 ---
 
-# GitHub Pull Request Generation
+# Pull/Merge Request Generation
 
-Generate pull request descriptions that communicate changes, impact, and value following project templates.
+Generate pull request (GitHub) or merge request (GitLab) descriptions that communicate changes, impact, and value following project templates.
 
 **Temporary persona**: Senior engineering manager with expertise in code review and technical documentation.
 
 ## When to Use This Skill
 
-- Creating a pull request description for branch changes
+- Creating a pull request (GitHub) or merge request (GitLab) description for branch changes
 - Documenting changes for code review
 - Communicating technical decisions and business value
-- Following repository PR conventions
+- Following repository PR (GitHub) / MR (GitLab) conventions
+
+## Platform Detection
+
+Determine whether the project uses GitHub or GitLab:
+
+1. Check for `.github/` directory at project root - indicates GitHub
+2. Check for `.gitlab/` directory at project root - indicates GitLab
+3. If both directories exist, ask user which platform to target
+4. If neither directory exists, ask user which platform to target
 
 ## Template Resolution
+
+### GitHub
 
 1. Search `.github/pull_request_template.md` for PR template
 2. If not found, search `**/pull_request_template.md` across repository
 3. If still not found, ask user for template or use minimal structure
+
+### GitLab
+
+1. Search `.gitlab/merge_request_templates/merge_request_template.md` for MR template
+2. If not found, search `**/merge_request_templates/**` across repository
+3. If still not found, ask user for template or use minimal structure
+
+**Note**: GitHub PR templates may include YAML frontmatter (`name`, `about`, `title`); GitLab MR templates do not include frontmatter.
 
 ## Git Operations (Read-Only)
 
@@ -48,22 +67,23 @@ git branch -a | cat                           # All branches
 
 **Forbidden operations**: Never use git commit, push, pull, merge, rebase, add, reset, clean, or stash.
 
-**Prefer remote tools**: Use GitHub/GitLab MCP tools when available for related issues, PRs, and branch history.
+**Prefer remote tools**: Use GitHub/GitLab MCP tools when available for related issues, PRs (GitHub) / MRs (GitLab), and branch history.
 
 ## Process
 
 ### Step 1: Analyze Branch
 
-- Search for pull_request_template.md in repository
+- Detect platform (GitHub or GitLab) using Platform Detection above
+- Search for the appropriate template using platform-specific Template Resolution
 - Run safe git operations (with `| cat`) to understand changes
 - Use MCP tools for context:
-  - Search related issues and PRs
+  - Search related issues and PRs (GitHub) / MRs (GitLab)
   - Analyze affected functionality and dependencies
   - Identify architectural patterns impacted
 
 ### Step 2: Classify and Consult User
 
-Determine PR type and generate title:
+Determine PR (GitHub) / MR (GitLab) type and generate title:
 
 | Type | When to Use |
 | :--- | :--- |
@@ -82,7 +102,7 @@ Present change summary and ask:
 - Business motivation and testing approach?
 - Breaking changes or review considerations?
 
-### Step 3: Generate PR Description
+### Step 3: Generate Description
 
 - Use template as minimum structure, enrich with critical details
 - Include conventional commit-style title
@@ -108,12 +128,12 @@ Choose appropriate grouping for changes:
 
 ## Output Format
 
-Present final PR description in markdown code block:
+Present final description in markdown code block:
 
 ```markdown
 type(scope): brief description
 
-[complete PR description following template structure]
+[complete PR/MR description following template structure]
 ```
 
 ## General Doc Constraints
@@ -137,7 +157,4 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Comprehensive analysis**: Use git commands, MCP tools, codebase search
 - **Business context**: Connect technical changes to business value
 - **Issue linking**: Use separate "closes #X" for each resolved issue
-
----
-
-> GitHub Pull Request Generation Skill v3.2.0 - KemingHe/common-devx
+- **Platform awareness**: Use detected platform terminology consistently throughout the generated description

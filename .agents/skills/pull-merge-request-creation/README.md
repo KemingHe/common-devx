@@ -1,28 +1,29 @@
-# README - GitHub Pull Request Generation
+# README - Pull/Merge Request Generation
 
-> **Last Updated**: 2026-02-05 by Keming He
+> **Last Updated**: 2026-02-25 by Keming He
 
-Generate GitHub pull request descriptions following repository templates to communicate changes, impact, and value.
+Generate pull request (GitHub) or merge request (GitLab) descriptions following repository templates to communicate changes, impact, and value. Supports both GitHub and GitLab with automatic platform detection.
 
 ## Quick Start
 
 Use this skill when you need to:
 
-- Create a PR description for branch changes
+- Create a PR (GitHub) or MR (GitLab) description for branch changes
 - Document changes for code review
 - Communicate technical decisions and business value
 
-Tell your AI agent: "Create a PR description" or "Write PR for my changes".
+Tell your AI agent: "Create a PR description" or "Write MR for my changes".
 
-## Template Discovery
+## Platform Support
 
-This skill searches for templates in order:
+The skill auto-detects the platform by checking for `.github/` or `.gitlab/` directories at project root.
 
-1. `.github/pull_request_template.md`
-2. Repository-wide search for pull_request_template.md
-3. Falls back to minimal structure if none found
+| Platform | Template Location | Frontmatter |
+| :--- | :--- | :--- |
+| GitHub | `.github/pull_request_template.md` | Optional YAML frontmatter |
+| GitLab | `.gitlab/merge_request_templates/` | No frontmatter |
 
-## PR Types
+## PR/MR Types
 
 | Type | When to Use |
 | :--- | :--- |
@@ -34,14 +35,9 @@ This skill searches for templates in order:
 
 ## Files
 
-- [`SKILL.md`](./SKILL.md) - AI instructions for PR generation
+- [`SKILL.md`](./SKILL.md) - AI instructions for PR/MR generation
 
 ## Related
 
-- [`github-issue/README.md`](../github-issue/README.md) - Generate issue descriptions
-- [`commit-message/README.md`](../commit-message/README.md) - Generate commit messages
-- [`.github/pull_request_template.md`](../../.github/pull_request_template.md) - Repository PR template
-
----
-
-> README Template v2.0.0 - KemingHe/common-devx
+- [`issue-creation/`](../issue-creation/README.md) - Generate issue descriptions
+- [`commit-message-creation/`](../commit-message-creation/README.md) - Generate commit messages
