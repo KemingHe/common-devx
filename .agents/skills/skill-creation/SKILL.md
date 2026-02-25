@@ -24,8 +24,9 @@ Create Agent Skills following the [agentskills.io](https://agentskills.io) speci
 ## Asset Resolution
 
 1. Check `./assets/skill-template.md` for the SKILL.md template
-2. If not found, search `**/skill-template.md` in repository
-3. If still not found, use the specification below to generate from scratch
+2. Check `./assets/general-doc-constraints.md` for the General Doc Constraints block (used conditionally for documentation-output skills)
+3. If not found, search `**/skill-template.md` and `**/general-doc-constraints.md` in repository
+4. If still not found, use the specification below to generate from scratch
 
 ## Process
 
@@ -91,6 +92,8 @@ Read the skill template from Asset Resolution. Fill in all bracket placeholders 
 
 - Adapt template sections to the skill's domain - remove unused optional sections, add domain-specific ones
 - For skills interacting with external systems, uncomment and fill in the Safety section (the template provides the pattern)
+- If the skill generates document or text output (READMEs, issues, PRs/MRs, commit messages, meeting docs, etc.), insert the General Doc Constraints block from `./assets/general-doc-constraints.md` at the placeholder position in the template (between Output Format and Skill Constraints)
+- If the skill does not produce document output (e.g., coaching, interactive modes), omit the General Doc Constraints block entirely
 - Keep under 500 lines; move supplementary detail to `references/`
 
 ### Step 4: Create Assets (if needed)
@@ -99,7 +102,6 @@ Place templates in `assets/` subdirectory:
 
 - Use descriptive names: `{purpose}-template.md`
 - Templates should be self-documenting with placeholders
-- Include version footer in templates
 
 ### Step 5: Create README.md
 
@@ -133,6 +135,7 @@ Apply to all generated output. If a discovered template deviates from any rule (
 
 - **Frontmatter**: Must be valid YAML with `name` and `description`
 - **Name matching**: Directory name must equal `name` field
+- **Naming convention**: Prefer action-oriented names describing what the skill does (e.g., `readme-creation`, `commit-message-creation`, `contacts-management`) - this is a soft recommendation; exceptions like `senior-mentor` (persona/coaching mode) are acceptable when clarity requires it
 - **Line limit**: Keep SKILL.md under 500 lines (move details to references/)
 - **Token budget**: Body should be <5000 tokens for efficient loading
 - **Progressive disclosure**: Only essential instructions in SKILL.md; details in assets/references
