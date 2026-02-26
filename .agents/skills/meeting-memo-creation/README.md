@@ -1,6 +1,6 @@
 # README - Meeting Memo Generation
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Generate meeting memos that capture decisions, actions, and key discussions following project templates.
 
@@ -18,8 +18,8 @@ Tell your AI agent: "Create a meeting memo" or "Document this meeting".
 
 | Template | Use Case |
 | :--- | :--- |
-| `memo-template.md` | Standard meeting memos with decisions and actions |
-| `standup-template.md` | Daily standup summaries |
+| [`memo-template.md`](./assets/memo-template.md) | Standard meeting memos with decisions and actions |
+| [`standup-template.md`](./assets/standup-template.md) | Daily standup summaries |
 
 ## Files
 
@@ -31,8 +31,3 @@ meeting-memo/
     ├── memo-template.md        # Standard meeting memo format
     └── standup-template.md     # Daily standup format
 ```
-
-## Related
-
-- [`meeting-agenda-creation/README.md`](../meeting-agenda-creation/README.md) - Generate meeting agendas
-- [`contacts-management/README.md`](../contacts-management/README.md) - Manage contact information

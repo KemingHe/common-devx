@@ -1,6 +1,6 @@
 # README - Issue Generation
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Generate issues following repository templates for bug reports, feature requests, and enhancements. Supports both GitHub and GitLab with automatic platform detection.
 
@@ -33,8 +33,3 @@ The skill auto-detects the platform by checking for `.github/` or `.gitlab/` dir
 ## Files
 
 - [`SKILL.md`](./SKILL.md) - AI instructions for issue generation
-
-## Related
-
-- [`pull-merge-request-creation/`](../pull-merge-request-creation/README.md) - Generate PR/MR descriptions
-- [`commit-message-creation/`](../commit-message-creation/README.md) - Generate commit messages

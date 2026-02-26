@@ -1,6 +1,6 @@
 # README - Common DevX
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Ready-to-use AI skills and human guides for consistent documentation, standardized workflows, and faster project setup. MIT licensed, zero dependencies.
 
@@ -8,7 +8,7 @@ Ready-to-use AI skills and human guides for consistent documentation, standardiz
 
 | Directory | Purpose | Audience |
 | :--- | :--- | :--- |
-| [`.agents/skills/`](./.agents/skills/README.md) | AI-consumable skills for documentation tasks | AI agents |
+| [`.agents/skills/`](./.agents/skills/) | AI-consumable skills for documentation tasks | AI agents |
 | [`human-guides/`](./human-guides/README.md) | Reference docs, troubleshooting, workflows | Developers |
 | [`.github/`](./.github/) | Issue and PR templates (GitHub) | GitHub users |
 | [`.gitlab/`](./.gitlab/) | Issue and MR templates (GitLab) | GitLab users |
@@ -23,7 +23,7 @@ Tell your agent:
 Generate a commit message for my staged changes
 ```
 
-Available skills: commit messages, issues, PRs/MRs, meeting memos, READMEs, and more. See [`.agents/skills/README.md`](./.agents/skills/README.md).
+Available skills: commit messages, issues, PRs/MRs, meeting memos, READMEs, and more. See [`.agents/skills/`](./.agents/skills/).
 
 ### For Developers
 
@@ -34,14 +34,7 @@ Browse [`human-guides/`](./human-guides/README.md) for:
 
 ### For Projects
 
-Copy `.agents/skills/` into your project - no modification needed regardless of public/private or GitHub/GitLab repo:
-
-```plaintext
-your-project/
-└── .agents/skills/    # Copy this directory as-is
-```
-
-Optionally copy `.github/` and/or `.gitlab/` for issue and PR/MR templates.
+Copy individual skill directories you need from `.agents/skills/` and template files from `.github/` or `.gitlab/`. This preserves your project-specific custom skills and workflows.
 
 <!-- TODO: Add npx skills add KemingHe/common-devx install path (see #45) -->
 
@@ -49,7 +42,7 @@ Optionally copy `.github/` and/or `.gitlab/` for issue and PR/MR templates.
 
 ```plaintext
 common-devx/
-├── .agents/skills/        # AI skills (see .agents/skills/README.md)
+├── .agents/skills/        # AI skills
 ├── .github/               # GitHub templates
 │   ├── ISSUE_TEMPLATE/    # Bug report, feature request
 │   └── pull_request_template.md
@@ -65,7 +58,7 @@ common-devx/
 
 ## References
 
-- [`.agents/skills/README.md`](./.agents/skills/README.md) - Full skill catalog
+- [`.agents/skills/`](./.agents/skills/) - AI skills directory
 - [`human-guides/README.md`](./human-guides/README.md) - Guide index
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) - How to contribute
 - [`SECURITY.md`](./SECURITY.md) - Security guidance

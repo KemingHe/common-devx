@@ -1,6 +1,6 @@
 # README - Skill Creation
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Create or refactor Agent Skills following the agentskills.io specification.
 
@@ -22,4 +22,3 @@ Tell your AI agent: "Create a skill for [task]" or "Convert this prompt to a ski
 ## Related
 
 - [agentskills.io/specification](https://agentskills.io/specification) - Official specification
-- [`Skill catalog`](../README.md)

@@ -1,6 +1,6 @@
 # README - Pull/Merge Request Generation
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Generate pull request (GitHub) or merge request (GitLab) descriptions following repository templates to communicate changes, impact, and value. Supports both GitHub and GitLab with automatic platform detection.
 
@@ -36,8 +36,3 @@ The skill auto-detects the platform by checking for `.github/` or `.gitlab/` dir
 ## Files
 
 - [`SKILL.md`](./SKILL.md) - AI instructions for PR/MR generation
-
-## Related
-
-- [`issue-creation/`](../issue-creation/README.md) - Generate issue descriptions
-- [`commit-message-creation/`](../commit-message-creation/README.md) - Generate commit messages

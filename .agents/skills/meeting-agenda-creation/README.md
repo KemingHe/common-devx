@@ -1,6 +1,6 @@
 # README - Meeting Agenda Generation
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Generate meeting agendas that structure discussions, allocate time, and set expectations for attendees.
 
@@ -31,8 +31,3 @@ meeting-agenda/
 └── assets/
     └── agenda-template.md      # Standard meeting agenda format
 ```
-
-## Related
-
-- [`meeting-memo-creation/README.md`](../meeting-memo-creation/README.md) - Document meeting outcomes
-- [`contacts-management/README.md`](../contacts-management/README.md) - Manage contact information

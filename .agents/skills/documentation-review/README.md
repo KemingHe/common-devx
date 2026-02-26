@@ -1,6 +1,6 @@
 # README - Documentation Review
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Review and correct documentation for consistency, correctness, and drift. Documentation edits only - no functional code changes.
 
@@ -36,8 +36,3 @@ Ask your AI agent to review documentation:
 ## Files
 
 - [`SKILL.md`](./SKILL.md) - AI instructions for documentation review
-
-## Related
-
-- [`skill-creation/README.md`](../skill-creation/README.md) - How to create new skills
-- [`commit-message-creation/README.md`](../commit-message-creation/README.md) - Generate commit messages
