@@ -1,6 +1,6 @@
 # README - Contact Management
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Manage contact information by adding, updating, or validating entries from various sources.
 
@@ -38,8 +38,3 @@ contacts/
 └── assets/
     └── contacts-template.md    # Contact entry format
 ```
-
-## Related
-
-- [`meeting-memo-creation/README.md`](../meeting-memo-creation/README.md) - Reference contacts in meeting docs
-- [`meeting-agenda-creation/README.md`](../meeting-agenda-creation/README.md) - Include attendee info in agendas

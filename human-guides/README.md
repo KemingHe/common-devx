@@ -1,6 +1,6 @@
 # README - Human Guides
 
-> **Last Updated**: 2026-02-06 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Reference documentation for developers - workflows, troubleshooting, and diagnostic guides. Human-readable (not AI skills).
 
@@ -41,5 +41,5 @@ New types welcome - use descriptive prefixes that categorize the content.
 
 ## References
 
-- [`.agents/skills/README.md`](../.agents/skills/README.md) - AI-assisted documentation skills
+- [`.agents/skills/`](../.agents/skills/) - AI skills directory
 - [`CONTRIBUTING.md`](../CONTRIBUTING.md) - Contributing guidelines

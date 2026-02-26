@@ -1,6 +1,6 @@
 # README - GitHub-GitLab Template Sync
 
-> **Last Updated**: 2026-02-25 by Keming He
+> **Last Updated**: 2026-02-26 by Keming He
 
 Synchronize `.github/` and `.gitlab/` template directories with automatic platform-specific transformations. Handles YAML frontmatter, terminology (PR/MR), directory structure, and template naming differences.
 
@@ -27,8 +27,3 @@ Tell your AI agent: "Sync my GitHub templates to GitLab" or "Update .gitlab/ fro
 
 - [`SKILL.md`](./SKILL.md) - AI instructions for template sync
 - [`assets/transformation-rules.md`](./assets/transformation-rules.md) - Platform transformation reference
-
-## Related
-
-- [`issue-creation/`](../issue-creation/README.md) - Unified issue generation (uses templates from both platforms)
-- [`pull-merge-request-creation/`](../pull-merge-request-creation/README.md) - Unified PR/MR generation
