@@ -290,15 +290,19 @@ gpg --armor --export-secret-keys YOUR_KEY_ID > private-key-backup.asc
 gpg --armor --export YOUR_KEY_ID > public-key.asc
 ```
 
-Store `private-key-backup.asc` securely. Delete the file after importing to your backup location:
+Store `private-key-backup.asc` securely. After importing to your backup location, delete the exported file:
 
 ```shell
-# macOS (BSD) - overwrite 3x before delete
+# macOS (BSD) - best-effort overwrite on traditional disks
 rm -P private-key-backup.asc public-key.asc
 
-# Linux (GNU) - overwrite before delete
+# Linux (GNU) - best-effort overwrite on traditional disks
 shred -u private-key-backup.asc public-key.asc
 ```
+
+> [!WARNING]
+>
+> **Secure deletion limitation**: Overwrite-based deletion (`rm -P`, `shred`) does not guarantee secure erasure on modern SSDs or journaled/copy-on-write filesystems (APFS, Btrfs, ZFS, ext4). Blocks may be remapped, retained in snapshots, or bypassed by TRIM operations. For sensitive key material: export directly to encrypted volumes (FileVault, LUKS), use tmpfs/RAM disk for temporary files, or avoid writing to disk entirely by piping to password managers.
 
 ### Adding Collaborators
 
