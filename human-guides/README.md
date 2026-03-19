@@ -14,8 +14,8 @@ All guides follow: `[type]-[tech-and-description].md`
 
 | Type | Purpose |
 | :--- | :--- |
-| `use-cases-` | Common workflows and operations |
 | `diagnosis-` | Specific investigation procedures |
+| `use-cases-` | Common workflows and operations |
 
 New types welcome - use descriptive prefixes that categorize the content.
 
