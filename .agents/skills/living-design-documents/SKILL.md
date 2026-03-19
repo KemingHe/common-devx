@@ -96,8 +96,8 @@ Determine where new content belongs based on maturity and role:
 
 **Graduation triggers**:
 
-- **Parked → Taxonomy**: Analysis is complete, structure is defined, ready for active reference
-- **Taxonomy → Core Decisions**: Decision has become load-bearing (breaking it requires major refactor), can be expressed as one-or-two-sentence policy
+- **Parked -> Taxonomy**: Analysis is complete, structure is defined, ready for active reference
+- **Taxonomy -> Core Decisions**: Decision has become load-bearing (breaking it requires major refactor), can be expressed as one-or-two-sentence policy
 
 ### Step 4: Generate Open Questions
 
@@ -177,7 +177,7 @@ When design content describes actionable work items, strongly recommend using th
 Present all generated or updated design documents as complete markdown code blocks, specify/remove "- [Component]" based on context:
 
 ```markdown
-# Design - Decisions
+# Design - Core Decisions
 
 [Full document content]
 ```
@@ -189,7 +189,7 @@ Present all generated or updated design documents as complete markdown code bloc
 ```
 
 ```markdown
-# Design - Parked Details - [Component]
+# Design - Parked - [Component]
 
 [Full document content]
 ```
@@ -215,7 +215,7 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Core Decisions cross-refs**: Content has inward references only - decision tables and policies never reference out to Taxonomy or Parked; NOTE block for navigation is permitted
 - **Heading uniqueness**: All headings must be unique within a single document to enable unambiguous anchor linking
 - **Open Questions**: Mandatory top-level section in all documents; optional at subsection level in Taxonomy for detailed components
-- **Graduation paths**: Parked → Taxonomy when analysis complete; Taxonomy → Core Decisions when decision becomes load-bearing
+- **Graduation paths**: Parked -> Taxonomy when analysis complete; Taxonomy -> Core Decisions when decision becomes load-bearing
 - **Cross-document linking**: Use markdown anchor links (`[text](./file.md#section-heading)`); expect dense cross-referencing; skill maintains link integrity during updates
 - **Component naming**: Agent proposes component names if not provided by user; user confirms before document creation
 - **Issue creation**: Strongly recommend `issue-creation` skill when content describes actionable work items

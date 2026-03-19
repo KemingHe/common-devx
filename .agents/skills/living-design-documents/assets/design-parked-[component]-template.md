@@ -6,7 +6,7 @@ Details too granular for current planning. Each item includes "Revisit when" mar
 
 > [!NOTE]
 >
-> Related design docs: [Design - Core Decisions](./design-core-decisions.md), [Design - Taxonomy](./design-taxonomy.md)
+> Related design docs: [Design - Core Decisions](./design-core-decisions.md), [Design - Taxonomy - [Component]](./design-taxonomy-[component].md). For simple, single-project setups, use `./design-taxonomy.md` instead.
 
 ---
 

@@ -6,7 +6,7 @@
 
 > [!NOTE]
 >
-> Related design docs: [Design - Core Decisions](./design-core-decisions.md), [Design - Parked](./design-parked.md)
+> Related design docs: [Design - Core Decisions](./design-core-decisions.md), [Design - Parked - [Component]](./design-parked-[component].md). For simple, non-component projects, link to `./design-parked.md` instead.
 
 ---
 
