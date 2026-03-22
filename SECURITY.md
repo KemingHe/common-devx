@@ -1,6 +1,6 @@
 # Security Policy
 
-> **Last Updated**: 2026-02-06 by Keming He
+> **Last Updated**: 2026-03-21 by Keming He
 
 Security considerations for using and contributing to common-devx.
 
@@ -21,7 +21,7 @@ This repository contains documentation templates and AI agent skills - not execu
 When using skills from this repository:
 
 1. **Read the skill** - Understand what the AI will do before invoking it
-2. **Review output** - Verify AI-generated content is accurate and appropriate
+2. **Review output** - Verify AI-generated content is appropriate, accurate, _and consistent_
 3. **Check for sensitive data** - Ensure no credentials, secrets, or PII are exposed
 4. **Validate links and paths** - Confirm references point to correct locations
 
@@ -44,7 +44,7 @@ These guides apply to any Git-based workflow, not just this repository.
 For inaccurate, misleading, or problematic content:
 
 - Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues) with details
-- Use the bug report template for specific problems
+- Use the `bug report` template for specific problems
 - Include the file path and description of the issue
 
 ### Security Concerns
