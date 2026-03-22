@@ -6,7 +6,7 @@ Ready-to-use [AI skills](#available-skills) and [human guides](#human-guides) fo
 
 > [!TIP]
 >
-> For background, read the [agent skills documentation](https://agentskills.io/what-are-skills) maintained by [Anthropic](https://www.anthropic.com/).
+> For background, see the [official agent skills documentation](https://agentskills.io/what-are-skills).
 
 ## Repository Structure
 
