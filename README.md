@@ -2,7 +2,7 @@
 
 > **Last Updated**: 2026-03-21 by Keming He
 
-Ready-to-use AI skills and human guides for consistent documentation, standardized workflows, and faster project setup. MIT licensed, zero dependencies.
+Ready-to-use [AI skills](https://agentskills.io/what-are-skills) and human guides for consistent documentation, standardized `git` workflows, and streamlined project management. [MIT licensed](./LICENSE), zero dependencies.
 
 ## Repository Structure
 
@@ -36,6 +36,34 @@ common-devx/
 | [Skill Creation](./.agents/skills/skill-creation/README.md) | 🧠 Meta | Create or refactor Agent Skills following the agentskills.io specification |
 
 > **Note**: Emojis in this table are a deliberate exception to the project's no-emoji convention, used here to aid visual scanning of skill categories.
+
+## How to Use
+
+### Option 1: Copy Skills to Your Project
+
+Copy skill directories from `.agents/skills/` to your project. Most AI coding agents support the `.agents/skills/` path:
+
+```shell
+# Copy a single skill
+cp -r .agents/skills/commit-message-creation /path/to/your-project/.agents/skills/
+
+# Or copy all skills
+cp -r .agents/skills /path/to/your-project/.agents/
+```
+
+- For [**Cursor**](https://cursor.com/docs/skills), also supported: `.cursor/skills/` (project) or `~/.cursor/skills/` (global).
+
+- For [**Claude Code**](https://code.claude.com/docs/en/skills), also supported: `.claude/skills/` (project) or `~/.claude/skills/` (global).
+
+- For other agents, see the [vercel-labs/skills supported agents list](https://github.com/vercel-labs/skills#supported-agents).
+
+### Option 2: Use as GitHub Template
+
+Click **Use this template** (green button, top right) to create a new repository with all skills and guides included.
+
+> [!TIP]
+>
+> Or use this direct link: [Create from template](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
 
 ## Human Guides
 
