@@ -93,6 +93,30 @@ When adding a new skill:
 
 **Rationale**: Categories help users quickly find relevant skills. Git Workflow and Project Management are the primary use cases. Meta is for skills that don't produce artifacts but change AI behavior or manage other skills. _Single-skill categories are avoided to maintain a scannable structure._
 
+## Guide Catalog Maintenance
+
+The root README contains a guide catalog that must be kept in sync when adding or modifying guides.
+
+### Design
+
+| Element | Convention |
+| :--- | :--- |
+| **Location** | Root `README.md`, ["Human Guides" section](./README.md#human-guides) |
+| **Structure** | Grouped by type prefix (`### Diagnosis`, `### Use Cases`), bullet lists within each |
+| **Link target** | Each guide links directly to its `.md` file |
+| **Sort order** | Alphabetical within each type group |
+
+### Adding a New Guide to Catalog
+
+When adding a new guide:
+
+1. Determine the type prefix (`diagnosis-` or `use-cases-`, or create a new type)
+2. Add a bullet under the appropriate `###` heading, alphabetically sorted
+3. Use format: `[Human-Readable Title](./human-guides/filename.md) - brief description`
+4. If creating a new type, add a new `###` heading in logical order
+
+**Rationale**: Simpler than the skill catalog - guides use a flat bullet list grouped by type prefix rather than a table with categories. The file naming pattern (`[type]-[description].md`) provides implicit categorization.
+
 ## Requirements
 
 > [!IMPORTANT]
