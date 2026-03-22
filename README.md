@@ -2,7 +2,11 @@
 
 > **Last Updated**: 2026-03-21 by Keming He
 
-Ready-to-use [AI skills](https://agentskills.io/what-are-skills) and human guides for consistent documentation, standardized `git` workflows, and streamlined project management. [MIT licensed](./LICENSE), zero dependencies.
+Ready-to-use [AI skills](#available-skills) and [human guides](#human-guides) for consistent documentation, standardized `git` workflows, and streamlined project management. [MIT licensed](./LICENSE), zero dependencies.
+
+> [!TIP]
+>
+> For background, read the [agent skills documentation](https://agentskills.io/what-are-skills) maintained by [Anthropic](https://www.anthropic.com/).
 
 ## Repository Structure
 
@@ -69,7 +73,19 @@ Click **Use this template** (green button, top right) to create a new repository
 
 ## Human Guides
 
-Developer reference docs for Git, shell, SSH, and GPG workflows. See [`human-guides/README.md`](./human-guides/README.md) for the full index.
+Developer reference docs for common workflows and troubleshooting. See [`human-guides/README.md`](./human-guides/README.md) for naming conventions and how to add new guides.
+
+### Diagnosis
+
+- [Terraform State Migration](./human-guides/diagnosis-terraform-state-migration.md) - investigation procedures for state migration issues
+
+### Use Cases
+
+- [Git](./human-guides/use-cases-git.md) - command-line workflows
+- [Git-crypt](./human-guides/use-cases-git-crypt.md) - transparent file encryption
+- [GPG Commit Signing](./human-guides/use-cases-gpg-commit-signing.md) - signing commits with GPG
+- [Shell](./human-guides/use-cases-shell.md) - shell operations
+- [SSH Authentication](./human-guides/use-cases-ssh-authentication.md) - Git and server authentication
 
 ## References
 
