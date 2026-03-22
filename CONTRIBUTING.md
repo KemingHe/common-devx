@@ -27,10 +27,10 @@ Use [issue templates](./.github/ISSUE_TEMPLATE/) to describe your proposed chang
 
 | Issue Type | When to Proceed |
 | :--- | :--- |
-| Bug fix | When maintainer confirmed as valid bug |
-| Feature request | When maintainer commented with approval |
+| Bug fix | After maintainer confirms it is a valid bug |
+| Feature request | After maintainer comments with approval |
 | Minor doc fix | Can proceed (typos, broken links) |
-| Significant change | When maintainer commented with approval |
+| Significant change | After maintainer comments with approval |
 
 ### 3. Branch
 
@@ -50,7 +50,8 @@ Before submitting:
 - [ ] Follows existing patterns
 - [ ] No `[TODO]` or `[TBD]` placeholders
 - [ ] Links work, frontmatter versions are correct
-- [ ] Last Updated date is current
+- [ ] `Last Updated` date is current for relevant files
+- [ ] Run [documentation-review](./.agents/skills/documentation-review/README.md) skill on changes if using an agent (recommended)
 
 ### 6. Submit PR
 

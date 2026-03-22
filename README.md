@@ -44,11 +44,13 @@ common-devx/
 Copy skill directories from `.agents/skills/` to your project. Most AI coding agents support the `.agents/skills/` path:
 
 ```shell
-# Copy a single skill
+# Copy a single skill (create directory if needed)
+mkdir -p /path/to/your-project/.agents/skills
 cp -r .agents/skills/commit-message-creation /path/to/your-project/.agents/skills/
 
-# Or copy all skills
-cp -r .agents/skills /path/to/your-project/.agents/
+# Copy all skills (warning: overwrites existing skills with same names)
+mkdir -p /path/to/your-project/.agents/skills
+cp -r .agents/skills/* /path/to/your-project/.agents/skills/
 ```
 
 - For [**Cursor**](https://cursor.com/docs/skills), also supported: `.cursor/skills/` (project) or `~/.cursor/skills/` (global).

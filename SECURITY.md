@@ -44,7 +44,7 @@ These guides apply to any Git-based workflow, not just this repository.
 For inaccurate, misleading, or problematic content:
 
 - Open a [GitHub issue](https://github.com/KemingHe/common-devx/issues) with details
-- Use the `bug report` template for specific problems
+- Choose the `Bug report` option when creating the issue
 - Include the file path and description of the issue
 
 ### Security Concerns
