@@ -55,7 +55,7 @@ Install once, use across all your projects:
 
 ```shell
 # Installs to `~/.cursor/skills/`, `~/.claude/skills/`, etc. based on detected agents
-npx skills add KemingHe/common-devx -g --all -y
+npx skills add KemingHe/common-devx -g --all
 ```
 
 #### Team Use (Project)
@@ -64,12 +64,12 @@ For shared, version-controlled skills:
 
 ```shell
 # Installs to the current project's `.agents/skills/` directory
-npx skills add KemingHe/common-devx --all -y
+npx skills add KemingHe/common-devx --all
 ```
 
 ### Alternative: Copy Skills Manually
 
-For customization or offline use, copy skill directories from `.agents/skills/` to your project:
+For customization or offline use, copy a skill directory from `.agents/skills/` to your project:
 
 ```shell
 mkdir -p /path/to/your-project/.agents/skills
