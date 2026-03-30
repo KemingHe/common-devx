@@ -1,6 +1,6 @@
 # Use Cases - [git-crypt](https://github.com/AGWA/git-crypt)
 
-> **Last Updated**: 2026-03-18 by Keming He based on `git-crypt` [v0.8.0 release](https://github.com/AGWA/git-crypt/releases/tag/0.8.0)
+> **Last Updated**: 2026-03-30 by Keming He based on `git-crypt` [v0.8.0 release](https://github.com/AGWA/git-crypt/releases/tag/0.8.0)
 
 ## Platform
 
@@ -125,10 +125,17 @@ This creates a random AES-256 key stored in `.git/git-crypt/keys/default`.
 **Add yourself as a trusted user**:
 
 ```shell
-git-crypt add-gpg-user YOUR_GPG_KEY_ID
+# Using email (from uid line)
+git-crypt add-gpg-user your-email@example.com
+
+# Or using long key ID (from sec line, after rsa4096/)
+# git-crypt add-gpg-user ABCDEF1234567890
+
+# Or using full fingerprint (40-character line below sec)
+# git-crypt add-gpg-user 1234567890123456789012345678901234567890
 ```
 
-Use your long key ID or fingerprint from [Prerequisites](#prerequisites).
+Any identifier that uniquely matches your GPG key works. See your [Prerequisites](#prerequisites) output for these values.
 
 > [!TIP]
 >
