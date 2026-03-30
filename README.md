@@ -1,6 +1,6 @@
 # README - Common DevX
 
-> **Last Updated**: 2026-03-21 by Keming He
+> **Last Updated**: 2026-03-30 by Keming He
 
 Ready-to-use [AI skills](#available-skills) and [human guides](#human-guides) for consistent documentation, standardized `git` workflows, and streamlined project management. [MIT licensed](./LICENSE), zero dependencies.
 
@@ -43,33 +43,50 @@ common-devx/
 
 ## How to Use
 
-### Option 1: Copy Skills to Your Project
-
-Copy skill directories from `.agents/skills/` to your project. Most AI coding agents support the `.agents/skills/` path:
-
-```shell
-# Copy a single skill (create directory if needed)
-mkdir -p /path/to/your-project/.agents/skills
-cp -r .agents/skills/commit-message-creation /path/to/your-project/.agents/skills/
-
-# Copy all skills (warning: overwrites existing skills with same names)
-mkdir -p /path/to/your-project/.agents/skills
-cp -r .agents/skills/* /path/to/your-project/.agents/skills/
-```
-
-- For [**Cursor**](https://cursor.com/docs/skills), also supported: `.cursor/skills/` (project) or `~/.cursor/skills/` (global).
-
-- For [**Claude Code**](https://code.claude.com/docs/en/skills), also supported: `.claude/skills/` (project) or `~/.claude/skills/` (global).
-
-- For other agents, see the [vercel-labs/skills supported agents list](https://github.com/vercel-labs/skills#supported-agents).
-
-### Option 2: Use as GitHub Template
-
-Click **Use this template** (green button, top right) to create a new repository with all skills and guides included.
+### Install via npx (Recommended)
 
 > [!TIP]
 >
-> Or use this direct link: [Create from template](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
+> See [vercel-labs/skills](https://github.com/vercel-labs/skills) for per-skill installation and other options.
+
+#### Individual Use (Global)
+
+Install once, use across all your projects:
+
+```shell
+# Installs to `~/.cursor/skills/`, `~/.claude/skills/`, etc. based on detected agents
+npx skills add KemingHe/common-devx -g --all
+```
+
+#### Team Use (Project)
+
+For shared, version-controlled skills:
+
+```shell
+# Installs to the current project's `.agents/skills/` directory
+npx skills add KemingHe/common-devx --all
+```
+
+### Alternative: Copy Skills Manually
+
+For customization or offline use, copy a skill directory from `.agents/skills/` to your project:
+
+```shell
+mkdir -p /path/to/your-project/.agents/skills
+cp -r .agents/skills/commit-message-creation /path/to/your-project/.agents/skills/
+```
+
+- For [**Cursor**](https://cursor.com/docs/skills), also supported: `.cursor/skills/` (project) or `~/.cursor/skills/` (global).
+- For [**Claude Code**](https://code.claude.com/docs/en/skills), also supported: `.claude/skills/` (project) or `~/.claude/skills/` (global).
+- For other agents, see [vercel-labs/skills supported agents](https://github.com/vercel-labs/skills#supported-agents).
+
+### Alternative: Use as GitHub Template
+
+Create a new repository with all skills and guides included.
+
+> [!TIP]
+>
+> Click **Use this template** (green button, top right) or use [this direct link](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
 
 ## Human Guides
 
