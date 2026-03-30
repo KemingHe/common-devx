@@ -45,48 +45,37 @@ common-devx/
 
 ### Install via npx (Recommended)
 
-> [!TIP]
->
-> See [vercel-labs/skills](https://github.com/vercel-labs/skills) for per-skill installation and other options.
+The [skills CLI](https://github.com/vercel-labs/skills) installs to a canonical location and auto-symlinks to all detected agents.
 
-#### Individual Use (Global)
-
-Install once, use across all your projects:
+| Scope | Flag | Location | Use Case |
+| :--- | :--- | :--- | :--- |
+| Global | `-g` | `~/.agents/skills/` | Install once, use across all projects |
+| Project | (default) | `.agents/skills/` | Shared with team, version-controlled |
 
 ```shell
-# Installs to `~/.cursor/skills/`, `~/.claude/skills/`, etc. based on detected agents
+# Global: available in all projects
 npx skills add KemingHe/common-devx -g --all
-```
 
-#### Team Use (Project)
-
-For shared, version-controlled skills:
-
-```shell
-# Installs to the current project's `.agents/skills/` directory
+# Project: committed with your repo
 npx skills add KemingHe/common-devx --all
 ```
 
-### Alternative: Copy Skills Manually
-
-For customization or offline use, copy a skill directory from `.agents/skills/` to your project:
-
-```shell
-mkdir -p /path/to/your-project/.agents/skills
-cp -r .agents/skills/commit-message-creation /path/to/your-project/.agents/skills/
-```
-
-- For [**Cursor**](https://cursor.com/docs/skills), also supported: `.cursor/skills/` (project) or `~/.cursor/skills/` (global).
-- For [**Claude Code**](https://code.claude.com/docs/en/skills), also supported: `.claude/skills/` (project) or `~/.claude/skills/` (global).
-- For other agents, see [vercel-labs/skills supported agents](https://github.com/vercel-labs/skills#supported-agents).
-
-### Alternative: Use as GitHub Template
-
-Create a new repository with all skills and guides included.
-
 > [!TIP]
 >
-> Click **Use this template** (green button, top right) or use [this direct link](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
+> To remove skills, see [`skills remove` documentation](https://github.com/vercel-labs/skills#skills-remove).
+
+### Alternative: Copy Manually
+
+For customization or offline use:
+
+```shell
+mkdir -p .agents/skills
+cp -r /path/to/common-devx/.agents/skills/commit-message-creation .agents/skills/
+```
+
+### Alternative: GitHub Template
+
+Create a new repository with all skills and guides included. Click **Use this template** (green button, top right) or use [this direct link](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
 
 ## Human Guides
 
