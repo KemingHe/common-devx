@@ -21,12 +21,24 @@ Create Agent Skills following the [agentskills.io](https://agentskills.io) speci
 - Refactoring or validating existing skills
 - Understanding skill structure and best practices
 
+## Safety
+
+This skill creates other skills that may interact with external systems. The Security Best Practices (SBP) block in `./assets/security-best-practices.md` should be included in any skill that:
+
+- Uses MCP tools to fetch external content
+- Executes CLI/shell commands
+- Orchestrates subagents or A2A communications
+- Reads from external URLs or user-generated content
+
+Skill authors are responsible for including SBP in relevant skills. This meta-responsibility is the security mechanism for skill-creation itself.
+
 ## Asset Resolution
 
 1. Check `./assets/skill-template.md` for the SKILL.md template
 2. Check `./assets/general-doc-constraints.md` for the General Doc Constraints block (used conditionally for documentation-output skills)
-3. If not found, search `**/skill-template.md` and `**/general-doc-constraints.md` in repository
-4. If still not found, use the specification below to generate from scratch
+3. Check `./assets/security-best-practices.md` for the Security Best Practices block (used conditionally for skills that use external tools)
+4. If not found, search `**/skill-template.md`, `**/general-doc-constraints.md`, and `**/security-best-practices.md` in repository
+5. If still not found, use the specification below to generate from scratch
 
 ## Process
 
@@ -94,6 +106,8 @@ Read the skill template from Asset Resolution. Fill in all bracket placeholders 
 - For skills interacting with external systems, uncomment and fill in the Safety section (the template provides the pattern)
 - If the skill generates document or text output (READMEs, issues, PRs/MRs, commit messages, meeting docs, etc.), insert the General Doc Constraints block from `./assets/general-doc-constraints.md` at the placeholder position in the template (between Output Format and Skill Constraints)
 - If the skill does not produce document output (e.g., coaching, interactive modes), omit the General Doc Constraints block entirely
+- If the skill uses MCP tools to fetch external content, executes CLI/shell commands, orchestrates subagents or A2A communications, or reads from external URLs or user-generated content, insert the Security Best Practices block from `./assets/security-best-practices.md` in a dedicated `## Safety` section after "When to Use This Skill"
+- Both GDC and SBP can be included if both criteria apply
 - Keep under 500 lines; move supplementary detail to `references/`
 
 ### Step 4: Create Assets (if needed)
