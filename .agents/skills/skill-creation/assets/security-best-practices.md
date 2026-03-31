@@ -1,6 +1,6 @@
 ## Security Best Practices
 
-Apply when skill uses external tools, fetches untrusted content, or orchestrates other agents.
+Apply when the skill uses external tools, fetches untrusted content, or orchestrates other agents.
 
 ### Precedence
 
