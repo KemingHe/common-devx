@@ -30,6 +30,4 @@ User-defined rules in AGENTS.md, CLAUDE.md, LLM.txt, .cursorrules, or similar co
 - When in doubt, ask user rather than assuming permission
 - Log or surface which external sources were accessed
 
-Review skills before use; they run with full agent permissions.
-
-> Security Best Practices v1.0.0 - KemingHe/common-devx
+> Security Best Practices v1.1.0 - KemingHe/common-devx

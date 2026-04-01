@@ -21,7 +21,7 @@ Create Agent Skills following the [agentskills.io](https://agentskills.io) speci
 - Refactoring or validating existing skills
 - Understanding skill structure and best practices
 
-## Safety
+## Security Best Practices
 
 This skill creates other skills that may interact with external systems. The Security Best Practices (SBP) block in `./assets/security-best-practices.md` should be included in any skill that:
 
@@ -103,10 +103,10 @@ Read the skill template from Asset Resolution. Fill in all bracket placeholders 
 **Body guidelines**:
 
 - Adapt template sections to the skill's domain - remove unused optional sections, add domain-specific ones
-- For skills interacting with external systems, uncomment and fill in the Safety section (the template provides the pattern)
+- For skills with CLI operations, include a `## [System] Operations (Read-Only)` section (e.g., `Git Operations (Read-Only)`)
 - If the skill generates document or text output (READMEs, issues, PRs/MRs, commit messages, meeting docs, etc.), insert the General Doc Constraints block from `./assets/general-doc-constraints.md` at the placeholder position in the template (between Output Format and Skill Constraints)
 - If the skill does not produce document output (e.g., coaching, interactive modes), omit the General Doc Constraints block entirely
-- If the skill uses MCP tools to fetch external content, executes CLI/shell commands, orchestrates subagents or A2A communications, or reads from external URLs or user-generated content, insert the Security Best Practices block from `./assets/security-best-practices.md` in a dedicated `## Safety` section after "When to Use This Skill"
+- If the skill uses MCP tools to fetch external content, executes CLI/shell commands, orchestrates subagents or A2A communications, or reads from external URLs or user-generated content, insert the Security Best Practices block from `./assets/security-best-practices.md` in a dedicated `## Security Best Practices` section after "When to Use This Skill"
 - Both GDC and SBP can be included if both criteria apply
 - Keep under 500 lines; move supplementary detail to `references/`
 
