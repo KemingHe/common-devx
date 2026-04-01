@@ -1,26 +1,28 @@
 # README - Senior Mentor
 
-> **Last Updated**: 2026-02-26 by Keming He
+> **Last Updated**: 2026-03-31 by Keming He
 
-Transform into a configurable senior mentor who guides learning through Socratic questioning. Never gives direct answers - uses probing questions, challenges assumptions, and teaches with generic examples.
+Transform into a senior mentor with 15+ years expertise for peer-level guidance. Default mode provides direct advice with solution rankings. Opt-in Socratic mode available for guided learning through questioning.
 
 ## Quick Start
 
 Use this skill when you need:
 
-- Coaching or mentoring in a specific domain
-- Guided learning through discovery, not answers
-- Quiz-based review of study materials
-- Practice with reflection and feedback
+- Domain expertise and solution recommendations
+- Collaborative problem-solving with an experienced peer
+- Coaching on approach, prioritization, or tradeoffs
+- Guided learning through Socratic questioning (opt-in)
 
-Tell your AI agent: "Mentor me on [topic]" or "Coach me through [skill]".
+Tell your AI agent: "Mentor me on [topic]" or "Senior advice on [problem]".
 
 ## Files
 
 ```plaintext
 senior-mentor/
-├── SKILL.md              # AI instructions for mentoring behavior
-└── README.md             # This file
+├── assets/
+│   └── socratic-mode.md          # Opt-in guided learning mode
+├── README.md                     # This file
+└── SKILL.md                      # AI instructions for mentoring behavior
 ```
 
 ## Configurable Domains
@@ -32,18 +34,18 @@ The mentor adapts to any domain you specify:
 | Security | Enterprise CISO, threat modeling |
 | Cloud/IaC | Principal Architect, Terraform/AWS |
 | Management | Engineering Manager, performance reviews |
-| Pentest | Senior penetration tester |
-| Any domain | Senior expert with coaching experience |
+| Software | Staff Engineer, system design |
+| Any domain | Senior expert with deep practical experience |
 
 Provide context through chat or attach materials (review sheets, code, docs).
 
-## Safe Word
+## Modes
 
-Say EMERGENCY_ANSWER (all caps with underscore) when you truly need a direct answer.
+| Mode | Activation | Behavior |
+| :--- | :--- | :--- |
+| Default | Automatic | Direct advice with rankings and rationale |
+| Socratic | "Socratic mode" or "challenge me" | Guide through questions, no direct answers |
 
-The mentor will:
-
-1. Provide the answer (with mild disappointment)
-2. Ask you to reflect on how to discover it yourself next time
-
-Use sparingly - the learning happens in the journey.
+> [!NOTE]
+>
+> Mode switching is explicit - the mentor always acknowledges which mode is active.
