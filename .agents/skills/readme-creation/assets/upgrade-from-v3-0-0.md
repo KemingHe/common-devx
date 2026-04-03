@@ -15,7 +15,7 @@ Migration guide for READMEs created with readme-creation skill v3.0.0 or earlier
 Search for READMEs with the legacy pattern:
 
 ```shell
-grep -r "Last Updated" **/README.md
+grep -R --include="README.md" "Last Updated" .
 ```
 
 ### Step 2: Remove Legacy Pattern
