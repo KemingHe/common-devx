@@ -1,7 +1,5 @@
 # README - Common DevX
 
-> **Last Updated**: 2026-03-30 by Keming He
-
 Ready-to-use [AI skills](#available-skills) and [human guides](#human-guides) for consistent documentation, standardized `git` workflows, and streamlined project management. [MIT licensed](./LICENSE), zero dependencies.
 
 > [!TIP]
@@ -45,35 +43,41 @@ common-devx/
 
 ### Install via npx (Recommended)
 
-The [skills CLI](https://github.com/vercel-labs/skills) installs to a canonical location and auto-symlinks to all detected agents.
+The [skills CLI](https://github.com/vercel-labs/skills) installs to a canonical location and auto-symlinks to detected agents. The interactive installer prompts you to select which skills and agents to install.
 
 | Scope | Flag | Location | Use Case |
 | :--- | :--- | :--- | :--- |
-| Global | `-g` | `~/.agents/skills/` | Install once, use across all projects |
 | Project | (default) | `.agents/skills/` | Shared with team, version-controlled |
+| Global | `-g` | `~/.agents/skills/` | Install once, use across all projects |
 
 ```shell
+# Project: committed with your repo (recommended for teams)
+npx skills add KemingHe/common-devx
+
 # Global: available in all projects
-npx skills add KemingHe/common-devx -g --all
-
-# Project: committed with your repo
-npx skills add KemingHe/common-devx --all
+npx skills add KemingHe/common-devx -g
 ```
 
-> [!TIP]
+> [!IMPORTANT]
 >
-> To remove skills, see [`skills remove` documentation](https://github.com/vercel-labs/skills#skills-remove).
+> - **Review skills before use** - they run with full agent permissions!
+>
+> - During installation, the CLI displays Security Risk Assessments from [Gen Agent Trust Hub](https://ai.gendigital.com/ath), [Socket](https://socket.dev/), and [Snyk](https://snyk.io/).
+>
+> - To remove skills, see [`skills remove` documentation](https://github.com/vercel-labs/skills#skills-remove).
 
-### Alternative: Copy Manually
+### Alternative 1 - Manual Copy
 
-For customization or offline use:
+For customization, copy any skill directly (MIT licensed):
 
 ```shell
+git clone https://github.com/KemingHe/common-devx.git
+
 mkdir -p .agents/skills
-cp -r /path/to/common-devx/.agents/skills/commit-message-creation .agents/skills/
+cp -r common-devx/.agents/skills/commit-message-creation .agents/skills/
 ```
 
-### Alternative: GitHub Template
+### Alternative 2 - GitHub Template
 
 Create a new repository with all skills and guides included. Click **Use this template** (green button, top right) or use [this direct link](https://github.com/new?template_name=common-devx&template_owner=KemingHe).
 
