@@ -1,16 +1,14 @@
 # README - [Directory Name]
 
-> **Last Updated**: [YYYY-MM-DD] by [First Name Last Name]
-
 [1-2 sentence answer to: "What is this directory and why does it exist?"]
 
 ## Directory Structure
 
 ```plaintext
 [directory-name]/
-├── [file-or-subdir]/     # [Purpose - what problem it solves]
-├── [file-or-subdir]/     # [Purpose - see subdir/README.md for details]
-└── README.md             # This file
+├── [subdir]/             # [Purpose - see subdir/README.md for details]
+├── [file.ext]            # [Purpose - what problem it solves]
+└── README.md
 ```
 
 ## Quick Links

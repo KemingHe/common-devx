@@ -1,7 +1,5 @@
 # README - Senior Mentor
 
-> **Last Updated**: 2026-03-31 by Keming He
-
 Transform into a senior mentor with 15+ years expertise for peer-level guidance. Default mode provides direct advice with solution rankings. Opt-in Socratic mode available for guided learning through questioning.
 
 ## Quick Start

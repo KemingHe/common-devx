@@ -1,7 +1,5 @@
 # README - Meeting Memo Generation
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Generate meeting memos that capture decisions, actions, and key discussions following project templates.
 
 ## Quick Start

@@ -1,7 +1,5 @@
 # README - Issue Generation
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Generate issues following repository templates for bug reports, feature requests, and enhancements. Supports both GitHub and GitLab with automatic platform detection.
 
 ## Quick Start
