@@ -1,7 +1,5 @@
 # README - Human Guides
 
-> **Last Updated**: 2026-03-21 by Keming He
-
 Reference documentation for developers - workflows, troubleshooting, and diagnostic guides. Human-readable (not AI skills).
 
 ## Platform Support

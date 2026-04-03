@@ -1,7 +1,5 @@
 # README - Commit Message Generation
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Generate conventional commit messages by analyzing staged changes and repository context.
 
 ## Quick Start

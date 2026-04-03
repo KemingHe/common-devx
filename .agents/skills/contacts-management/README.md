@@ -1,7 +1,5 @@
 # README - Contact Management
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Manage contact information by adding, updating, or validating entries from various sources.
 
 ## Quick Start

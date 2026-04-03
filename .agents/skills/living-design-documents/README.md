@@ -1,7 +1,5 @@
 # README - Living Design Documents
 
-> **Last Updated**: 2026-03-19 by Keming He
-
 Create and maintain three living design documents (Core Decisions, Taxonomy, Parked) that guide development through structured design thinking. Documents graduate upward as content matures from deferred analysis to detailed specifications to load-bearing policies.
 
 ## Quick Start

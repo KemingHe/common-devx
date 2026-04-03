@@ -1,7 +1,5 @@
 # README - Pull/Merge Request Generation
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Generate pull request (GitHub) or merge request (GitLab) descriptions following repository templates to communicate changes, impact, and value. Supports both GitHub and GitLab with automatic platform detection.
 
 ## Quick Start

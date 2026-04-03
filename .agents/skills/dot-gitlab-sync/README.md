@@ -1,7 +1,5 @@
 # README - GitHub-GitLab Template Sync
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Synchronize `.github/` and `.gitlab/` template directories with automatic platform-specific transformations. Handles YAML frontmatter, terminology (PR/MR), directory structure, and template naming differences.
 
 ## Quick Start

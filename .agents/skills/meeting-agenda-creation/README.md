@@ -1,7 +1,5 @@
 # README - Meeting Agenda Generation
 
-> **Last Updated**: 2026-02-26 by Keming He
-
 Generate meeting agendas that structure discussions, allocate time, and set expectations for attendees.
 
 ## Quick Start

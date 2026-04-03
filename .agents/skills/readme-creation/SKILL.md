@@ -7,7 +7,7 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "3.0.0"
+  version: "3.1.0"
 ---
 
 # README Generation
@@ -21,6 +21,10 @@ Generate self-contained README files that enable developers to instantly underst
 - Creating README for a new directory
 - Updating existing README after structural changes
 - Ensuring consistent documentation across repository
+
+## Upgrade Guides
+
+Check `./assets/upgrade-from-*.md` for migration instructions when updating READMEs created with older skill versions.
 
 ## Core Philosophy
 
@@ -74,9 +78,11 @@ Use your judgment - patterns work well for consistent naming conventions, explic
 **Preferred**: Use `tree` command for hierarchical view (may not be installed on all systems):
 
 ```shell
-tree -L 2 [directory]          # 2-level depth
-tree -L 1 --dirsfirst          # Directories first, 1 level
+tree -L 2 --dirsfirst [directory]   # 2-level depth, directories first
+tree -L 1 --dirsfirst               # 1 level, directories first
 ```
+
+**Tree ordering convention**: Directories first (lexicographically), then files (lexicographically). This matches common IDE file explorers and `tree --dirsfirst` output.
 
 **Fallback**: Use `ls` or IDE file listing for flat view.
 
@@ -123,7 +129,7 @@ Root READMEs are a special case requiring additional context gathering. Auto-det
 
 Structure for scannability:
 
-1. **Title + metadata** - identity
+1. **Title** - identity
 2. **Overview** - what and why (most critical - first thing devs read)
 3. **Directory structure or patterns** - what's here (this level only)
 4. **Quick links** - where to go next
