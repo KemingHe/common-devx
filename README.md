@@ -34,6 +34,7 @@ common-devx/
 | [Meeting Agenda Creation](./.agents/skills/meeting-agenda-creation/README.md) | 📁 Project Management | Generate meeting agendas with topics, timing, and preparation requirements |
 | [Meeting Memo Creation](./.agents/skills/meeting-memo-creation/README.md) | 📁 Project Management | Generate meeting memos capturing decisions, actions, and key discussions |
 | [README Creation](./.agents/skills/readme-creation/README.md) | 📁 Project Management | Generate self-contained README files that enable instant developer onboarding |
+| [Next Session Handoff](./.agents/skills/next-session-handoff/README.md) | 🧠 Meta | Generate structured handoff documents for context transfer across AI session boundaries |
 | [Senior Mentor](./.agents/skills/senior-mentor/README.md) | 🧠 Meta | Transform into a senior mentor for guided learning through Socratic questioning |
 | [Skill Creation](./.agents/skills/skill-creation/README.md) | 🧠 Meta | Create or refactor Agent Skills following the agentskills.io specification |
 
