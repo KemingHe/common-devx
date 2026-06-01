@@ -18,7 +18,7 @@ Ask your AI agent to review documentation:
 | Correctness | Valid YAML, working links |
 | Completeness | Required sections, no placeholders |
 | Freshness | Last Updated dates, versions |
-| Characters | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or `--`/` -- ` in prose; use ` - ` for separation. Exception: `↑` |
+| Characters | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or `--`/` -- ` in prose; use ` - ` for separation. Exceptions: `↑`; box drawing for `tree` output |
 | Inline formatting | `_underscore_` italics; colon outside bold (`**Topic**:`) |
 | Linter | IDE/editor warnings when available |
 | Output quality | Hard-wrapped bullets or prose that simulate visual wrapping; sentences broken across hard newlines; orphaned `(optional)` labels; unfilled `[placeholder]` text |

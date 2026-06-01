@@ -7,7 +7,9 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "2.0.0"
+  contributors:
+    - puneetdixit200
+  version: "2.1.0"
 ---
 
 # Documentation Review
@@ -40,7 +42,7 @@ Determine files to review:
 | **Correctness** | Valid YAML/markdown, working links, accurate paths |
 | **Completeness** | Required sections present, no unfilled placeholders |
 | **Freshness** | Last Updated date, version numbers, changelog entries |
-| **Characters** | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or em-dash substitutes (`--`, ` -- `) in prose; use ` - ` for clause separation (exception: `↑`) |
+| **Characters** | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or em-dash substitutes (`--`, ` -- `) in prose; use ` - ` for clause separation (exceptions: `↑`; box drawing for `tree` output) |
 | **Inline formatting** | `_underscore_` italics only; colon outside bold label markers (`**Topic**:`) |
 | **Linter** | Check IDE/editor linter errors when available |
 | **Output quality** | Hard-wrapped bullets or prose that simulate visual wrapping; sentences broken across hard newlines; orphaned `(optional)` labels in populated sections; unfilled `[placeholder]` text; terminology inconsistency; KISS/DRY violations |
@@ -88,7 +90,7 @@ Summarize with:
 
 Apply to all generated output. If a discovered template deviates from any rule (e.g., uses emojis semantically, uses a different bullet convention), note the deviation explicitly and confirm with the user before treating it as a permitted exception.
 
-- **Characters**: QWERTY keyboard typeable only - no smart quotes, emojis, or special Unicode anywhere. In prose, do not use em-dashes or em-dash substitutes (`--`, ` -- `); use ` - ` (space-dash-space) for clause separation instead. Exception: `↑` for ToC navigation.
+- **Characters**: QWERTY keyboard typeable only - no smart quotes, emojis, or special Unicode anywhere. In prose, do not use em-dashes or em-dash substitutes (`--`, ` -- `); use ` - ` (space-dash-space) for clause separation instead. Exceptions: `↑` for ToC navigation; Unicode box drawing characters for `tree`-style directory rendering.
 - **Inline formatting**: Use `_underscore_` for italics, not `*single-star*`. Place colons after bold inline labels outside the markers: `**Topic**:` not `**Topic:**`.
 - **Bullets**: Use `-` for all unordered lists; one bullet per complete thought; never wrap a bullet's content mid-sentence onto a continuation line - split into separate bullets if too long or multi-thought. Nested sub-bullets for component grouping are permitted. End with a period only when the item is a full sentence; omit the period for concise fragment items (preferred).
 - **Prose**: Do not insert hard newlines to simulate visual wrapping. Keep each prose paragraph on one continuous physical line and let editors or viewers wrap it visually. Exception: commit message bodies use one sentence per line for `git log` readability.
@@ -96,7 +98,7 @@ Apply to all generated output. If a discovered template deviates from any rule (
 - **Consistency**: Use the same term for the same concept throughout; match the voice and tense of the template; do not mix header levels for parallel sections.
 - **KISS and DRY**: Each section and bullet conveys unique information - no redundancy or overlap.
 
-> General Doc Constraints v1.1.1 - KemingHe/common-devx
+> General Doc Constraints v1.2.0 - KemingHe/common-devx
 
 ## Skill Constraints
 
