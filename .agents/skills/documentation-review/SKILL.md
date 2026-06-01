@@ -7,7 +7,9 @@ description: |
 license: MIT
 metadata:
   author: KemingHe
-  version: "2.0.0"
+  contributors:
+    - puneetdixit200
+  version: "2.1.0"
 ---
 
 # Documentation Review
@@ -40,7 +42,7 @@ Determine files to review:
 | **Correctness** | Valid YAML/markdown, working links, accurate paths |
 | **Completeness** | Required sections present, no unfilled placeholders |
 | **Freshness** | Last Updated date, version numbers, changelog entries |
-| **Characters** | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or em-dash substitutes (`--`, ` -- `) in prose; use ` - ` for clause separation (exception: `↑`) |
+| **Characters** | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or em-dash substitutes (`--`, ` -- `) in prose; use ` - ` for clause separation (exceptions: `↑`; box drawing for `tree` output) |
 | **Inline formatting** | `_underscore_` italics only; colon outside bold label markers (`**Topic**:`) |
 | **Linter** | Check IDE/editor linter errors when available |
 | **Output quality** | Hard-wrapped bullets or prose that simulate visual wrapping; sentences broken across hard newlines; orphaned `(optional)` labels in populated sections; unfilled `[placeholder]` text; terminology inconsistency; KISS/DRY violations |
