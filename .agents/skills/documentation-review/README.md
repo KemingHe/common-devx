@@ -21,7 +21,7 @@ Ask your AI agent to review documentation:
 | Characters | QWERTY-only everywhere; no smart quotes, emojis, or special Unicode; no em-dashes or `--`/` -- ` in prose; use ` - ` for separation. Exception: `↑` |
 | Inline formatting | `_underscore_` italics; colon outside bold (`**Topic**:`) |
 | Linter | IDE/editor warnings when available |
-| Output quality | Soft-wrapped bullets or prose; sentences broken across hard newlines; orphaned `(optional)` labels; unfilled `[placeholder]` text |
+| Output quality | Hard-wrapped bullets or prose that simulate visual wrapping; sentences broken across hard newlines; orphaned `(optional)` labels; unfilled `[placeholder]` text |
 
 ## Common Catches
 
